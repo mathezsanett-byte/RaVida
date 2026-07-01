@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>RaVida – Price Guide 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&family=Noto+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--gold:#B8952A;--gold2:#D4A832;--dark:#3A3D40;--text:#2C2C2C;--gray:#777;--white:#fff;--red:#8B1A1A}
+body{font-family:'Lato',sans-serif;background:#fff;color:var(--text);max-width:860px;margin:0 auto;font-size:15px}
+body.ar-mode{font-family:'Noto Sans Arabic',sans-serif}
+.sticky-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #e8e0d0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.lang-bar{background:var(--dark);display:flex;justify-content:flex-end;gap:6px;padding:6px 28px}
+.lang-btn{background:transparent;border:1px solid rgba(255,255,255,.25);color:#bbb;padding:3px 11px;border-radius:20px;font-size:11px;letter-spacing:.08em;cursor:pointer;font-family:inherit;transition:all .2s}
+.lang-btn.active,.lang-btn:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.cat-bar{display:flex;border-bottom:2px solid #f0e8d8;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.cat-bar::-webkit-scrollbar{display:none}
+.cat-btn{flex:1;min-width:140px;padding:13px 8px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;border:none;background:transparent;color:#aaa;cursor:pointer;border-bottom:3px solid transparent;transition:all .2s;font-family:inherit;white-space:nowrap}
+.cat-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+.page-header{display:flex;align-items:stretch;padding:30px 40px 26px;border-bottom:1px solid #e0d8c8}
+.logo-block{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-right:28px;min-width:130px}
+.logo-block img{width:110px;height:auto}
+.divider-v{width:1px;background:linear-gradient(to bottom,transparent,var(--gold),transparent);margin:0 28px;flex-shrink:0}
+.header-text{display:flex;flex-direction:column;justify-content:center}
+.header-brand{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;color:var(--dark);letter-spacing:.02em;line-height:1;margin-bottom:2px}
+.header-sub{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gray);font-weight:300}
+.header-rule{width:100%;height:1px;background:linear-gradient(to right,var(--gold),transparent);margin:10px 0 8px}
+.header-cat{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--dark);line-height:1.1}
+.header-cat-sub{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gray);margin-top:4px}
+.banner{margin:0 40px;border:1.5px solid var(--gold);border-top:none;padding:13px 24px 11px;text-align:center;background:linear-gradient(135deg,rgba(184,149,42,.07),rgba(184,149,42,.02))}
+.banner-title{font-size:10px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.banner-sub{font-size:13px;font-weight:700;color:var(--dark);margin:3px 0}
+.banner-note{font-size:11px;color:var(--gray);font-weight:300}
+.consult-line{margin:5px 0 0;font-size:11.5px;color:var(--dark);font-weight:700}
+.info-line{font-size:11.5px;color:var(--gray);text-align:center;padding:14px 40px 0;font-style:italic;line-height:1.7}
+.cat-panel{display:none}.cat-panel.active{display:block}
+.content{padding:0 40px 60px}
+.section-hdr{background:var(--dark);color:#fff;padding:9px 18px;margin-top:28px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.section-hdr.gold{background:var(--gold)}.section-hdr.red{background:var(--red)}
+.item{display:flex;justify-content:space-between;align-items:flex-start;padding:13px 18px;border-bottom:1px solid #ede8de;gap:14px}
+.item:last-child{border-bottom:none}
+.item-name{font-size:14.5px;font-weight:400;color:var(--dark);line-height:1.3}
+.item-desc{font-size:11px;color:var(--gray);margin-top:3px;font-weight:300;line-height:1.5}
+.item-right{text-align:right;flex-shrink:0;min-width:110px}
+.item-price{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:500;color:var(--dark);line-height:1.1;white-space:nowrap}
+.price-note{font-size:10.5px;color:var(--gray);margin-top:2px;font-style:italic}
+.price-req{font-size:12.5px;color:var(--gold);font-style:italic;font-weight:600}
+.labs{font-size:10.5px;color:var(--gold);margin-top:2px}
+.note-box{border-left:3px solid var(--gold);padding:10px 18px;margin:14px 0 0;font-size:12px;color:var(--gray);line-height:1.65;background:rgba(184,149,42,.04)}
+.note-box strong{color:var(--dark)}
+.page-footer{background:var(--dark);color:#bbb;text-align:center;padding:22px;font-size:12px;line-height:2}
+.page-footer .gold{color:var(--gold)}.page-footer .dot{color:var(--gold);margin:0 8px}
+.l{display:none}
+body.lang-en .l.en{display:inline}
+body.lang-de .l.de{display:inline}
+body.lang-ru .l.ru{display:inline}
+body.lang-ar .l.ar{display:inline}
+@media(max-width:600px){
+  .page-header{padding:18px 16px 14px}
+  .logo-block{min-width:80px}.logo-block img{width:75px}
+  .divider-v{margin:0 14px}
+  .header-brand{font-size:36px}.header-cat{font-size:26px}
+  .banner{margin:0 16px}.content{padding:0 16px 40px}
+  .info-line{padding:12px 16px 0}
+  .item-price{font-size:19px}
+}
+</style>
+</head>
+<body class="lang-en">
+<div class="sticky-nav">
+  <div class="lang-bar">
+    <button class="lang-btn active" onclick="setLang('en',this)">EN</button>
+    <button class="lang-btn" onclick="setLang('de',this)">DE</button>
+    <button class="lang-btn" onclick="setLang('ru',this)">RU</button>
+    <button class="lang-btn" onclick="setLang('ar',this)">AR</button>
+  </div>
+  <div class="cat-bar"><button class="cat-btn active" onclick="setCat('aesthetic',this)"><span class="l en">Aesthetic &amp; Beauty</span><span class="l de">Ästhetik &amp; Schönheit</span><span class="l ru">Эстетика</span><span class="l ar">التجميل</span></button>
+<button class="cat-btn" onclick="setCat('medical',this)"><span class="l en">Medical Services</span><span class="l de">Medizinische Leistungen</span><span class="l ru">Медицина</span><span class="l ar">الطب</span></button>
+<button class="cat-btn" onclick="setCat('physio',this)"><span class="l en">Physio &amp; Recovery</span><span class="l de">Physiotherapie</span><span class="l ru">Физиотерапия</span><span class="l ar">العلاج الطبيعي</span></button>
+<button class="cat-btn" onclick="setCat('wellness',this)"><span class="l en">Wellness &amp; IV</span><span class="l de">Wellness &amp; IV</span><span class="l ru">Велнес &amp; IV</span><span class="l ar">العافية و IV</span></button>
+</div>
+</div>
+<div class="cat-panel active" id="panel-aesthetic">
+<div class="page-header">
+  <div class="logo-block"><img src="data:image/jpeg;base64,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" alt="RaVida"/></div>
+  <div class="divider-v"></div>
+  <div class="header-text">
+    <div class="header-brand">RaVida</div>
+    <div class="header-sub">Medical &amp; Holistic Clinic</div>
+    <div class="header-rule"></div>
+    <div class="header-cat"><span class="l en">Aesthetic & Beauty</span><span class="l de">Ästhetik & Schönheit</span><span class="l ru">Эстетика и Красота</span><span class="l ar">التجميل والجمال</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+  </div>
+</div>
+<div class="banner">
+  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
+  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
+  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+</div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Premium products from France, Germany & Switzerland · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Premiumprodukte aus Frankreich, Deutschland & der Schweiz · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Премиальные продукты из Франции, Германии и Швейцарии · Окончательная цена после консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · منتجات من فرنسا وألمانيا وسويسرا · السعر النهائي بعد الاستشارة</span></div>
+<div class="content">
+<div class="section-hdr dark"><span class="l en">Botox & Neuromodulators</span><span class="l de">Botox & Neuromodulatoren</span><span class="l ru">Ботокс и Нейромодуляторы</span><span class="l ar">البوتوكس والمُعدِّلات العصبية</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Botox Upper Face</span><span class="l de">Botox Oberes Gesicht</span><span class="l ru">Ботокс — Верхняя Зона Лица</span><span class="l ar">بوتوكس الوجه العلوي</span></div>
+    <div class="item-desc"><span class="l en">Forehead · frown lines · crow's feet</span><span class="l de">Stirn · Zornesfalten · Krähenfüße</span><span class="l ru">Лоб · межбровные складки · гусиные лапки</span><span class="l ar">الجبهة · تجاعيد الغضب · حواف العينين</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 110</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Botox Lower Face</span><span class="l de">Botox Unteres Gesicht</span><span class="l ru">Ботокс — Нижняя Зона Лица</span><span class="l ar">بوتوكس الوجه السفلي</span></div>
+    <div class="item-desc"><span class="l en">Gummy smile · nose · lip flip · DAO · chin</span><span class="l de">Zahnfleischlächeln · Nase · Lip Flip · DAO · Kinn</span><span class="l ru">Улыбка дёсен · нос · флип губ · DAO · подбородок</span><span class="l ar">الابتسامة اللثوية · الأنف · الشفاه · الذقن</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 100 – € 170</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Botox Full Face</span><span class="l de">Botox Ganzes Gesicht</span><span class="l ru">Ботокс — Всё Лицо</span><span class="l ar">بوتوكس الوجه كامل</span></div>
+    <div class="item-desc"><span class="l en">Complete upper & lower face treatment</span><span class="l de">Vollständige Behandlung oben & unten</span><span class="l ru">Комплексная обработка верхней и нижней зон</span><span class="l ar">علاج شامل للوجه العلوي والسفلي</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 220</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Masseter Botox</span><span class="l de">Masseter-Botox</span><span class="l ru">Массетер-Ботокс</span><span class="l ar">بوتوكس العضلة الماضغة</span></div>
+    <div class="item-desc"><span class="l en">Jaw slimming & bruxism treatment</span><span class="l de">Kieferverschlankung & Bruxismus-Behandlung</span><span class="l ru">Коррекция овала лица & лечение бруксизма</span><span class="l ar">تنحيف الفك وعلاج صرير الأسنان</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 160</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Nefertiti Lift</span><span class="l de">Nefertiti-Lift</span><span class="l ru">Нефертити-Лифт</span><span class="l ar">رفع نيفرتيتي</span></div>
+    <div class="item-desc"><span class="l en">Neck rejuvenation & jawline definition</span><span class="l de">Halsstraffung & Kieferliniendefinition</span><span class="l ru">Омоложение шеи & контуринг нижней челюсти</span><span class="l ar">تجديد شباب الرقبة وتحديد خط الفك</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 150 – € 210</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Dermal Fillers — Swiss Premium</span><span class="l de">Dermale Filler — Schweizer Premium</span><span class="l ru">Дермальные Филлеры — Швейцарский Премиум</span><span class="l ar">حشوات الجلد — السويسرية</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Dermal Filler</span><span class="l de">Dermaler Filler</span><span class="l ru">Дермальный Филлер</span><span class="l ar">حشو الجلد</span></div>
+    <div class="item-desc"><span class="l en">Lip enhancement · cheek · jawline · chin · under-eye</span><span class="l de">Lippenvolumen · Wangen · Kiefer · Kinn · Augenringe</span><span class="l ru">Губы · скулы · овал · подбородок · периорбитальная зона</span><span class="l ar">الشفاه · الخدود · الفك · الذقن · تحت العينين</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 170 – € 210</div><div class="price-note">per syringe / pro Spritze / за шприц</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Skin Boosters</span><span class="l de">Skin Booster</span><span class="l ru">Скин-Бустеры</span><span class="l ar">معززات البشرة</span></div>
+    <div class="item-desc"><span class="l en">Skin hydration · glow & texture improvement</span><span class="l de">Hautfeuchtigkeit · Glow & Texturverbesserung</span><span class="l ru">Увлажнение кожи · сияние & улучшение текстуры</span><span class="l ar">ترطيب البشرة وتحسين البريق والملمس</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 120 – € 145</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Biostimulators</span><span class="l de">Biostimulatoren</span><span class="l ru">Биостимуляторы</span><span class="l ar">المحفزات الحيوية</span></div>
+    <div class="item-desc"><span class="l en">Collagen stimulation · improves firmness & elasticity</span><span class="l de">Kollagenstimulation · verbessert Festigkeit & Elastizität</span><span class="l ru">Стимуляция коллагена · упругость & эластичность</span><span class="l ar">تحفيز الكولاجين والثبات والمرونة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 250</div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Mesotherapy</span><span class="l de">Mesotherapie</span><span class="l ru">Мезотерапия</span><span class="l ar">العلاج الميزوي</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Mesotherapy — Face</span><span class="l de">Mesotherapie — Gesicht</span><span class="l ru">Мезотерапия — Лицо</span><span class="l ar">ميزوثيرابي — الوجه</span></div>
+    <div class="item-desc"><span class="l en">Skin rejuvenation · vitamins & hydration</span><span class="l de">Hautverjüngung · Vitamine & Hydration</span><span class="l ru">Омоложение кожи · витамины & увлажнение</span><span class="l ar">تجديد البشرة · الفيتامينات والترطيب</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 90</div><div class="price-note">per session / pro Sitzung / за сеанс</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Mesotherapy — Hair</span><span class="l de">Mesotherapie — Haare</span><span class="l ru">Мезотерапия — Волосы</span><span class="l ar">ميزوثيرابي — الشعر</span></div>
+    <div class="item-desc"><span class="l en">Strengthening & growth stimulation</span><span class="l de">Stärkung & Wachstumsstimulation</span><span class="l ru">Укрепление & стимуляция роста</span><span class="l ar">تقوية وتحفيز النمو</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 100</div><div class="price-note">per session / pro Sitzung / за сеанс</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Mesotherapy — Body</span><span class="l de">Mesotherapie — Körper</span><span class="l ru">Мезотерапия — Тело</span><span class="l ar">ميزوثيرابي — الجسم</span></div>
+    <div class="item-desc"><span class="l en">Localized fat reduction</span><span class="l de">Lokalisierte Fettreduktion</span><span class="l ru">Локальное уменьшение жировых отложений</span><span class="l ar">تقليل الدهون الموضعية</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 110</div><div class="price-note">per session / pro Sitzung / за сеанс</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Skin Treatments</span><span class="l de">Hautbehandlungen</span><span class="l ru">Процедуры по Уходу за Кожей</span><span class="l ar">علاجات البشرة</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Skincare Glow</span><span class="l de">Skincare Glow</span><span class="l ru">Skincare Glow</span><span class="l ar">Skincare Glow</span></div>
+    <div class="item-desc"><span class="l en">Cleansing · toning · targeted glow treatment</span><span class="l de">Reinigung · Tonung · gezieltes Glow-Treatment</span><span class="l ru">Очищение · тонизирование · процедура сияния</span><span class="l ar">تنظيف · ترطيب · علاج الإشراق</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 30</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Skincare RaVida</span><span class="l de">Skincare RaVida</span><span class="l ru">Skincare RaVida</span><span class="l ar">Skincare RaVida</span></div>
+    <div class="item-desc"><span class="l en">Face massage deluxe · deep nourishing ritual</span><span class="l de">Gesichtsmassage Deluxe · tiefes Nähreritual</span><span class="l ru">Делюкс-массаж лица · глубокое питание</span><span class="l ar">مساج الوجه الفاخر · طقوس التغذية العميقة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 40</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HydraFacial — Basic</span><span class="l de">HydraFacial — Basic</span><span class="l ru">HydraFacial — Basic</span><span class="l ar">HydraFacial — Basic</span></div>
+    <div class="item-desc"><span class="l en">Deep cleansing · exfoliation · hydration</span><span class="l de">Tiefenreinigung · Peeling · Hydration</span><span class="l ru">Глубокое очищение · эксфолиация · увлажнение</span><span class="l ar">تنظيف عميق · تقشير · ترطيب</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 40</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HydraFacial — VIP</span><span class="l de">HydraFacial — VIP</span><span class="l ru">HydraFacial — VIP</span><span class="l ar">HydraFacial — VIP</span></div>
+    <div class="item-desc"><span class="l en">Advanced protocol + LED therapy + targeted serums</span><span class="l de">Erweitertes Protokoll + LED-Therapie + Seren</span><span class="l ru">Расширенный протокол + LED-терапия + сыворотки</span><span class="l ar">بروتوكول متقدم + علاج LED + أمصال</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 50</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HydraFacial — VIP+</span><span class="l de">HydraFacial — VIP+</span><span class="l ru">HydraFacial — VIP+</span><span class="l ar">HydraFacial — VIP+</span></div>
+    <div class="item-desc"><span class="l en">Full protocol + antioxidant infusion + booster</span><span class="l de">Vollprotokoll + Antioxidans-Infusion + Booster</span><span class="l ru">Полный протокол + антиоксидантная инфузия + бустер</span><span class="l ar">البروتوكول الكامل + مضادات الأكسدة + معزز</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 79</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HydraFacial — Upper Back</span><span class="l de">HydraFacial — Oberer Rücken</span><span class="l ru">HydraFacial — Верхняя Спина</span><span class="l ar">HydraFacial — الظهر العلوي</span></div>
+    <div class="item-desc"><span class="l en">Deep cleansing & hydration for upper back</span><span class="l de">Tiefenreinigung & Hydration für den oberen Rücken</span><span class="l ru">Глубокое очищение & увлажнение верхней части спины</span><span class="l ar">تنظيف عميق وترطيب للظهر العلوي</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 90</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">OxyGeneo 3-in-1</span><span class="l de">OxyGeneo 3-in-1</span><span class="l ru">OxyGeneo 3-в-1</span><span class="l ar">OxyGeneo 3-في-1</span></div>
+    <div class="item-desc"><span class="l en">Exfoliation · oxygenation · nutrient infusion</span><span class="l de">Peeling · Sauerstoffversorgung · Nährstoffinfusion</span><span class="l ru">Эксфолиация · оксигенация · инфузия питательных веществ</span><span class="l ar">تقشير · أكسجين · تزويد بالمغذيات</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 75</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HIFU — Full Face & Neck</span><span class="l de">HIFU — Ganzes Gesicht & Hals</span><span class="l ru">HIFU — Лицо & Шея</span><span class="l ar">HIFU — الوجه والرقبة</span></div>
+    <div class="item-desc"><span class="l en">Non-surgical lifting & tightening</span><span class="l de">Nicht-chirurgisches Lifting & Straffung</span><span class="l ru">Неинвазивный лифтинг & подтяжка</span><span class="l ar">شد غير جراحي للوجه والرقبة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 95</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HIFU — Body Contouring</span><span class="l de">HIFU — Körperkonturierung</span><span class="l ru">HIFU — Контуринг Тела</span><span class="l ar">HIFU — تشكيل الجسم</span></div>
+    <div class="item-desc"><span class="l en">Targeted area tightening</span><span class="l de">Gezielte Bereichsstraffung</span><span class="l ru">Подтяжка целевых зон</span><span class="l ar">شد المناطق المستهدفة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 100 – € 180</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Chemical Peel — Light</span><span class="l de">Chemisches Peeling — Leicht</span><span class="l ru">Химический Пилинг — Лёгкий</span><span class="l ar">التقشير الكيميائي — خفيف</span></div>
+    <div class="item-desc"><span class="l en">Superficial resurfacing & glow</span><span class="l de">Oberflächliche Erneuerung & Glow</span><span class="l ru">Поверхностное обновление & сияние</span><span class="l ar">تجديد سطحي وإشراق</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Chemical Peel — Medium</span><span class="l de">Chemisches Peeling — Mittel</span><span class="l ru">Химический Пилинг — Средний</span><span class="l ar">التقشير الكيميائي — متوسط</span></div>
+    <div class="item-desc"><span class="l en">Deeper renewal & pigmentation</span><span class="l de">Tiefere Erneuerung & Pigmentierung</span><span class="l ru">Глубокое обновление & пигментация</span><span class="l ar">تجديد أعمق وعلاج التصبغ</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 85</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Chemical Peel — Deep</span><span class="l de">Chemisches Peeling — Tief</span><span class="l ru">Химический Пилинг — Глубокий</span><span class="l ar">التقشير الكيميائي — عميق</span></div>
+    <div class="item-desc"><span class="l en">Intensive resurfacing treatment · consultation required</span><span class="l de">Intensive Erneuerungsbehandlung · Beratung erforderlich</span><span class="l ru">Интенсивное омоложение кожи · требуется консультация</span><span class="l ar">علاج تجديد مكثف · يلزم الاستشارة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 90 – € 150</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Microneedling — Face</span><span class="l de">Microneedling — Gesicht</span><span class="l ru">Микронидлинг — Лицо</span><span class="l ar">الوخز الدقيق — الوجه</span></div>
+    <div class="item-desc"><span class="l en">Collagen induction & rejuvenation</span><span class="l de">Kollagenbildung & Verjüngung</span><span class="l ru">Стимуляция коллагена & омоложение</span><span class="l ar">تحفيز الكولاجين والتجديد</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 90</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Microneedling — Acne Scars</span><span class="l de">Microneedling — Aknenarben</span><span class="l ru">Микронидлинг — Шрамы от Акне</span><span class="l ar">الوخز الدقيق — ندوب حب الشباب</span></div>
+    <div class="item-desc"><span class="l en">Targeted scar remodeling</span><span class="l de">Gezielte Narbenbehandlung</span><span class="l ru">Коррекция рубцов</span><span class="l ar">إعادة تشكيل الندوب المستهدفة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 110</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Microneedling — Hair Restoration</span><span class="l de">Microneedling — Haarwiederherstellung</span><span class="l ru">Микронидлинг — Восстановление Волос</span><span class="l ar">الوخز الدقيق — استعادة الشعر</span></div>
+    <div class="item-desc"><span class="l en">Scalp stimulation & growth</span><span class="l de">Kopfhautstimulation & Wachstum</span><span class="l ru">Стимуляция кожи головы & рост</span><span class="l ar">تحفيز فروة الرأس والنمو</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 100</div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Plastic Surgery — Face</span><span class="l de">Plastische Chirurgie — Gesicht</span><span class="l ru">Пластическая Хирургия — Лицо</span><span class="l ar">الجراحة التجميلية — الوجه</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Facelift</span><span class="l de">Facelift</span><span class="l ru">Подтяжка Лица</span><span class="l ar">شد الوجه</span></div>
+    <div class="item-desc"><span class="l en">Full · mini · neck lift</span><span class="l de">Voll · Mini · Halslift</span><span class="l ru">Полная · мини · подтяжка шеи</span><span class="l ar">كامل · ميني · شد الرقبة</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Rhinoplasty</span><span class="l de">Rhinoplastik</span><span class="l ru">Ринопластика</span><span class="l ar">تجميل الأنف</span></div>
+    <div class="item-desc"><span class="l en">Primary · revision · tip refinement · non-surgical</span><span class="l de">Primär · Revision · Spitzenkorrektur · nicht-chirurgisch</span><span class="l ru">Первичная · повторная · коррекция кончика · нехирургическая</span><span class="l ar">أولي · مراجعة · تحسين الطرف · غير جراحي</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Blepharoplasty</span><span class="l de">Blepharoplastik</span><span class="l ru">Блефаропластика</span><span class="l ar">جراحة الجفن</span></div>
+    <div class="item-desc"><span class="l en">Upper & lower eyelid surgery</span><span class="l de">Ober- & Unterlidchirurgie</span><span class="l ru">Хирургия верхнего & нижнего века</span><span class="l ar">جراحة الجفن العلوي والسفلي</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Facial Implants</span><span class="l de">Gesichtsimplantate</span><span class="l ru">Имплантаты Лица</span><span class="l ar">غرسات الوجه</span></div>
+    <div class="item-desc"><span class="l en">Cheek · chin · jaw structural enhancement</span><span class="l de">Wangen · Kinn · Kiefer Strukturverbesserung</span><span class="l ru">Скулы · подбородок · нижняя челюсть</span><span class="l ar">الخد · الذقن · الفك</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Fox Eye / Cat-Eye Lift</span><span class="l de">Fox Eye / Cat-Eye Lift</span><span class="l ru">Fox Eye / Cat-Eye Лифт</span><span class="l ar">رفع عين الثعلب</span></div>
+    <div class="item-desc"><span class="l en">Surgical lateral canthoplasty</span><span class="l de">Chirurgische laterale Kanthoplastik</span><span class="l ru">Хирургическая кантопластика</span><span class="l ar">رأب الزاوية الجانبية الجراحية</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Dimple Creation · Lip Lift · Brow Lift</span><span class="l de">Grübchen · Lippenlift · Brauenlift</span><span class="l ru">Ямочки · Лифт Губ · Подтяжка Бровей</span><span class="l ar">الغمازات · رفع الشفاه · رفع الحاجب</span></div>
+    <div class="item-desc"><span class="l en">Facial detail refinement procedures</span><span class="l de">Gesichtsdetailverfeinerung</span><span class="l ru">Детальная коррекция черт лица</span><span class="l ar">إجراءات تحسين تفاصيل الوجه</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Nanofat Grafting</span><span class="l de">Nanofett-Transplantation</span><span class="l ru">Нанофат-Графтинг</span><span class="l ar">زرع نانوفات</span></div>
+    <div class="item-desc"><span class="l en">Dark circles & overall skin quality</span><span class="l de">Augenringe & allgemeine Hautqualität</span><span class="l ru">Тёмные круги & качество кожи</span><span class="l ar">الهالات السوداء وجودة البشرة العامة</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+
+
+</div>
+</div>
+<div class="cat-panel" id="panel-medical">
+<div class="page-header">
+  <div class="logo-block"><img src="data:image/jpeg;base64,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" alt="RaVida"/></div>
+  <div class="divider-v"></div>
+  <div class="header-text">
+    <div class="header-brand">RaVida</div>
+    <div class="header-sub">Medical &amp; Holistic Clinic</div>
+    <div class="header-rule"></div>
+    <div class="header-cat"><span class="l en">Medical Services</span><span class="l de">Medizinische Leistungen</span><span class="l ru">Медицинские Услуги</span><span class="l ar">الخدمات الطبية</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+  </div>
+</div>
+<div class="banner">
+  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
+  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
+  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+</div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · السعر النهائي بعد الاستشارة الشخصية</span></div>
+<div class="content">
+<div class="section-hdr dark"><span class="l en">General Medical</span><span class="l de">Allgemeinmedizin</span><span class="l ru">Общая Медицина</span><span class="l ar">الطب العام</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">General Consultation & Health Screening</span><span class="l de">Allgemeine Beratung & Gesundheitscheck</span><span class="l ru">Общая Консультация & Осмотр</span><span class="l ar">استشارة عامة وفحص صحي</span></div>
+    <div class="item-desc"><span class="l en">Full examination · preventive care · referrals</span><span class="l de">Volluntersuchung · Prävention · Überweisungen</span><span class="l ru">Полное обследование · профилактика · направления</span><span class="l ar">فحص كامل · رعاية وقائية · إحالات</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 30</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">ECG & Cardiology Consultation</span><span class="l de">EKG & Kardiologie-Beratung</span><span class="l ru">ЭКГ</span><span class="l ar">EKG</span></div>
+    <div class="item-desc"><span class="l en">Cardiac monitoring · cardiac screening</span><span class="l de">Herzüberwachung · Kardiales Screening</span><span class="l ru"></span><span class="l ar">مراقبة القلب</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 45</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 15</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Gastroenterology</span><span class="l de">Gastroenterologie</span><span class="l ru">Гастроэнтерология</span><span class="l ar">أمراض الجهاز الهضمي</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Gastroenterology Consultation</span><span class="l de">Gastroenterologie-Beratung</span><span class="l ru">Гастроэнтерологическая Консультация</span><span class="l ar">استشارة الجهاز الهضمي</span></div>
+    <div class="item-desc"><span class="l en">Digestive system · liver assessment</span><span class="l de">Verdauungssystem · Leberbeurteilung</span><span class="l ru">Пищеварительная система · оценка функции печени</span><span class="l ar">الجهاز الهضمي · تقييم الكبد</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 50</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 25</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Upper GI Endoscopy (Gastroscopy)</span><span class="l de">Obere GI-Endoskopie (Gastroskopie)</span><span class="l ru">Гастроскопия (ФГДС)</span><span class="l ar">تنظير الجهاز الهضمي العلوي</span></div>
+    
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Lower GI Endoscopy (Colonoscopy)</span><span class="l de">Untere GI-Endoskopie (Koloskopie)</span><span class="l ru">Колоноскопия</span><span class="l ar">تنظير القولون</span></div>
+    
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Pain Management</span><span class="l de">Schmerztherapie</span><span class="l ru">Управление Болью</span><span class="l ar">إدارة الألم</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Chronic Pain Consultation</span><span class="l de">Chronische Schmerz-Beratung</span><span class="l ru">Консультация по Хронической Боли</span><span class="l ar">استشارة الألم المزمن</span></div>
+    <div class="item-desc"><span class="l en">Diagnostic assessment & management plan</span><span class="l de">Diagnostik & Behandlungsplan</span><span class="l ru">Диагностика & план лечения</span><span class="l ar">التقييم التشخيصي وخطة العلاج</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 50</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Joint Injections</span><span class="l de">Gelenkinjektionen</span><span class="l ru">Инъекции в Суставы</span><span class="l ar">حقن المفاصل</span></div>
+    <div class="item-desc"><span class="l en">Targeted corticosteroid or hyaluronic acid</span><span class="l de">Gezielte Kortikosteroide oder Hyaluronsäure</span><span class="l ru">Целевые кортикостероиды или гиалуроновая кислота</span><span class="l ar">كورتيكوستيرويد أو حمض الهيالورونيك</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Nerve Blocks</span><span class="l de">Nervenblockaden</span><span class="l ru">Блокады Нервов</span><span class="l ar">حصار الأعصاب</span></div>
+    <div class="item-desc"><span class="l en">Minimally invasive pain procedure</span><span class="l de">Minimal-invasive Schmerzbehandlung</span><span class="l ru">Минимально инвазивная процедура</span><span class="l ar">إجراء الألم الأقل توغلاً</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Radiofrequency Ablation</span><span class="l de">Radiofrequenzablation</span><span class="l ru">Радиочастотная Абляция</span><span class="l ar">الترددات الراديوية</span></div>
+    <div class="item-desc"><span class="l en">Advanced interventional pain treatment</span><span class="l de">Fortgeschrittene interventionelle Schmerztherapie</span><span class="l ru">Расширенное интервенционное лечение боли</span><span class="l ar">علاج الألم التدخلي المتقدم</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Medical Nutrition</span><span class="l de">Medizinische Ernährung</span><span class="l ru">Медицинское Питание</span><span class="l ar">التغذية الطبية</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Nutritional Assessment & Meal Plan</span><span class="l de">Ernährungsbeurteilung & Ernährungsplan</span><span class="l ru">Оценка Питания & План Питания</span><span class="l ar">تقييم التغذية وخطة الوجبات</span></div>
+    <div class="item-desc"><span class="l en">Body composition · metabolic testing · diet plan</span><span class="l de">Körperzusammensetzung · Stoffwechsel · Diätplan</span><span class="l ru">Состав тела · метаболическое тестирование · план диеты</span><span class="l ar">تكوين الجسم · اختبار الأيض · خطة الغذاء</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 50</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Personalized Nutrition Program</span><span class="l de">Personalisiertes Ernährungsprogramm</span><span class="l ru">Персонализированная Программа Питания</span><span class="l ar">برنامج التغذية الشخصي</span></div>
+    <div class="item-desc"><span class="l en">Custom meal planning + follow-up sessions</span><span class="l de">Individuelle Ernährungsplanung + Nachsorgegespräche</span><span class="l ru">Индивидуальный план питания + сессии наблюдения</span><span class="l ar">تخطيط الوجبات المخصص + جلسات المتابعة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 150</div><div class="price-note">per month / pro Monat / в месяц</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Weight Management Program</span><span class="l de">Gewichtsmanagement-Programm</span><span class="l ru">Программа Контроля Веса</span><span class="l ar">برنامج إدارة الوزن</span></div>
+    <div class="item-desc"><span class="l en">Assessment · behavioral support · weekly monitoring (4 visits)</span><span class="l de">Beurteilung · Verhaltensunterstützung · wöchentliches Monitoring (4 Besuche)</span><span class="l ru">Оценка · поддержка · еженедельный мониторинг (4 визита)</span><span class="l ar">التقييم · الدعم · المتابعة الأسبوعية (4 زيارات)</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 120</div><div class="price-note">per month / pro Monat / в месяц</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 15</div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Orthopedic Surgery</span><span class="l de">Orthopädische Chirurgie</span><span class="l ru">Ортопедическая Хирургия</span><span class="l ar">جراحة العظام</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Orthopedic Consultation</span><span class="l de">Orthopädie-Beratung</span><span class="l ru">Ортопедическая Консультация</span><span class="l ar">استشارة العظام</span></div>
+    <div class="item-desc"><span class="l en">Diagnostic assessment & management plan</span><span class="l de">Diagnostik & Behandlungsplan</span><span class="l ru">Диагностика & план лечения</span><span class="l ar">التقييم التشخيصي وخطة العلاج</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 50</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 25</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Body Plastic Surgery</span><span class="l de">Körper-Plastische Chirurgie</span><span class="l ru">Пластическая Хирургия Тела</span><span class="l ar">جراحة تجميل الجسم</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Liposuction</span><span class="l de">Liposuktion</span><span class="l ru">Липосакция</span><span class="l ar">شفط الدهون</span></div>
+    <div class="item-desc"><span class="l en">VASER · laser · high-definition contouring</span><span class="l de">VASER · Laser · High-Definition-Konturierung</span><span class="l ru">VASER · лазерная · высокоточное контурирование</span><span class="l ar">VASER · ليزر · تشكيل عالي الدقة</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Tummy Tuck</span><span class="l de">Bauchdeckenstraffung</span><span class="l ru">Абдоминопластика</span><span class="l ar">شد البطن</span></div>
+    <div class="item-desc"><span class="l en">Full · mini · extended abdominoplasty</span><span class="l de">Voll · Mini · Erweiterte Abdominoplastik</span><span class="l ru">Полная · мини · расширенная</span><span class="l ar">كامل · ميني · مد البطن</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Breast Procedures</span><span class="l de">Brustoperationen</span><span class="l ru">Операции на Груди</span><span class="l ar">عمليات الثدي</span></div>
+    <div class="item-desc"><span class="l en">Augmentation · lift · reduction · implant revision</span><span class="l de">Augmentation · Lifting · Reduktion · Implantatrevision</span><span class="l ru">Увеличение · подтяжка · уменьшение · ревизия</span><span class="l ar">تكبير · رفع · تصغير · مراجعة الغرسات</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Brazilian Butt Lift (BBL)</span><span class="l de">Brazilian Butt Lift (BBL)</span><span class="l ru">Бразильская Подтяжка Ягодиц (BBL)</span><span class="l ar">البرازيلي (BBL)</span></div>
+    <div class="item-desc"><span class="l en">Fat transfer body contouring</span><span class="l de">Fetttransfer Körperkonturierung</span><span class="l ru">Контурирование тела с пересадкой жира</span><span class="l ar">تشكيل الجسم بنقل الدهون</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Arm Lift / Thigh Lift</span><span class="l de">Armstraffung / Oberschenkelstraffung</span><span class="l ru">Брахиопластика / Подтяжка Бёдер</span><span class="l ar">شد الذراعين / الفخذين</span></div>
+    <div class="item-desc"><span class="l en">Body contouring after weight loss</span><span class="l de">Körperkonturierung nach Gewichtsverlust</span><span class="l ru">Контурирование тела после похудения</span><span class="l ar">تشكيل الجسم بعد فقدان الوزن</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Intimate Procedures</span><span class="l de">Intime Eingriffe</span><span class="l ru">Интимные Процедуры</span><span class="l ar">الإجراءات الحميمة</span></div>
+    <div class="item-desc"><span class="l en">Personalized surgical refinement</span><span class="l de">Personalisierte chirurgische Verfeinerung</span><span class="l ru">Персонализированная хирургическая коррекция</span><span class="l ar">تحسين جراحي شخصي</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+</div>
+
+
+</div>
+</div>
+<div class="cat-panel" id="panel-physio">
+<div class="page-header">
+  <div class="logo-block"><img src="data:image/jpeg;base64,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" alt="RaVida"/></div>
+  <div class="divider-v"></div>
+  <div class="header-text">
+    <div class="header-brand">RaVida</div>
+    <div class="header-sub">Medical &amp; Holistic Clinic</div>
+    <div class="header-rule"></div>
+    <div class="header-cat"><span class="l en">Physio & Recovery</span><span class="l de">Physiotherapie & Erholung</span><span class="l ru">Физиотерапия и Восстановление</span><span class="l ar">العلاج الطبيعي والتعافي</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+  </div>
+</div>
+<div class="banner">
+  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
+  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
+  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+</div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · السعر النهائي بعد الاستشارة الشخصية</span></div>
+<div class="content">
+<div class="section-hdr dark"><span class="l en">Manual Therapy & Rehabilitation</span><span class="l de">Manuelle Therapie & Rehabilitation</span><span class="l ru">Мануальная Терапия и Реабилитация</span><span class="l ar">العلاج اليدوي والتأهيل</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Initial Physiotherapy Assessment</span><span class="l de">Erstbeurteilung Physiotherapie</span><span class="l ru">Первичная Физиотерапевтическая Оценка</span><span class="l ar">تقييم العلاج الطبيعي الأولي</span></div>
+    <div class="item-desc"><span class="l en">Full diagnostic evaluation</span><span class="l de">Vollständige Diagnostik</span><span class="l ru">Полная диагностическая консультация</span><span class="l ar">تقييم تشخيصي كامل</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 10</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Manual Therapy Session</span><span class="l de">Manuelle Therapie Sitzung</span><span class="l ru">Сеанс Мануальной Терапии</span><span class="l ar">جلسة العلاج اليدوي</span></div>
+    <div class="item-desc"><span class="l en">60 min hands-on treatment</span><span class="l de">60 Min. Behandlung</span><span class="l ru">60 мин. практическое лечение</span><span class="l ar">60 دقيقة علاج يدوي</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 50</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Deep Tissue / Myofascial Release</span><span class="l de">Tiefengewebe / Myofasziales Release</span><span class="l ru">Глубокий Тканевый / Миофасциальный Релиз</span><span class="l ar">الأنسجة العميقة / الإفراج اللفافي</span></div>
+    <div class="item-desc"><span class="l en">Targeted muscle & fascia therapy</span><span class="l de">Gezielte Muskel- & Faszientherapie</span><span class="l ru">Терапия мышц & фасций</span><span class="l ar">علاج العضلات واللفافة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 40</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Joint Mobilization & Manipulation</span><span class="l de">Gelenkmobilisation & Manipulation</span><span class="l ru">Мобилизация & Манипуляция Суставов</span><span class="l ar">تعبئة المفاصل</span></div>
+    <div class="item-desc"><span class="l en">Advanced physiotherapy technique</span><span class="l de">Fortgeschrittene Physiotherapietechnik</span><span class="l ru">Продвинутая физиотерапевтическая техника</span><span class="l ar">تقنية العلاج الطبيعي المتقدمة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Orthopedic Rehabilitation</span><span class="l de">Orthopädische Rehabilitation</span><span class="l ru">Ортопедическая Реабилитация</span><span class="l ar">التأهيل العظمي</span></div>
+    <div class="item-desc"><span class="l en">Post-surgery · fracture · ligament recovery</span><span class="l de">Post-OP · Fraktur · Bänderreha</span><span class="l ru">После операции · переломы · связки</span><span class="l ar">ما بعد الجراحة · الكسور · الأربطة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Neurological Physiotherapy</span><span class="l de">Neurologische Physiotherapie</span><span class="l ru">Неврологическая Физиотерапия</span><span class="l ar">العلاج الطبيعي العصبي</span></div>
+    <div class="item-desc"><span class="l en">Stroke · balance · coordination rehab</span><span class="l de">Schlaganfall · Balance · Koordination</span><span class="l ru">Инсульт · баланс · координация</span><span class="l ar">السكتة الدماغية · التوازن · التنسيق</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 60</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Pelvic Floor Physiotherapy</span><span class="l de">Beckenboden-Physiotherapie</span><span class="l ru">Физиотерапия Тазового Дна</span><span class="l ar">علاج طبيعي لقاع الحوض</span></div>
+    <div class="item-desc"><span class="l en">Postpartum · bladder control · core rehab</span><span class="l de">Postpartum · Blasenkontrolle · Core</span><span class="l ru">После родов · контроль мочевого пузыря · кор</span><span class="l ar">ما بعد الولادة · التحكم في المثانة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Geriatric Physiotherapy</span><span class="l de">Geriatrische Physiotherapie</span><span class="l ru">Гериатрическая Физиотерапия</span><span class="l ar">العلاج الطبيعي للمسنين</span></div>
+    <div class="item-desc"><span class="l en">Fall prevention · mobility · independence</span><span class="l de">Sturzprävention · Mobilität · Selbstständigkeit</span><span class="l ru">Профилактика падений · подвижность</span><span class="l ar">الوقاية من السقوط · الحركة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 50</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Sports Recovery — Massage</span><span class="l de">Sportliche Erholung — Massage</span><span class="l ru">Спортивное Восстановление — Массаж</span><span class="l ar">التعافي الرياضي — التدليك</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Sports Massage — 30 min</span><span class="l de">Sportmassage — 30 Min.</span><span class="l ru">Спортивный Массаж — 30 Мин.</span><span class="l ar">التدليك الرياضي — 30 دقيقة</span></div>
+    <div class="item-desc"><span class="l en">Pre & post-event · maintenance · injury prevention</span><span class="l de">Vor & nach Wettkampf · Wartung · Verletzungsprävention</span><span class="l ru">До/после соревнований · поддержание · профилактика</span><span class="l ar">قبل وبعد المسابقة · الصيانة · الوقاية</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 35</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Sports Massage — 60 min</span><span class="l de">Sportmassage — 60 Min.</span><span class="l ru">Спортивный Массаж — 60 Мин.</span><span class="l ar">التدليك الرياضي — 60 دقيقة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 60</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Sports Massage — 90 min</span><span class="l de">Sportmassage — 90 Min.</span><span class="l ru">Спортивный Массаж — 90 Мин.</span><span class="l ar">التدليك الرياضي — 90 دقيقة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 85</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Gun Massage Therapy — 15 min</span><span class="l de">Massagepistole — 15 Min.</span><span class="l ru">Массаж Пушкой — 15 Мин.</span><span class="l ar">مساج المسدس — 15 دقيقة</span></div>
+    <div class="item-desc"><span class="l en">Deep percussion therapy</span><span class="l de">Tiefe Perkussionstherapie</span><span class="l ru">Глубокая перкуссионная терапия</span><span class="l ar">العلاج بالإيقاع العميق</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 10</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Lymphatic Drainage — 30 min</span><span class="l de">Lymphdrainage — 30 Min.</span><span class="l ru">Лимфодренажный Массаж — 30 Мин.</span><span class="l ar">الصرف اللمفاوي — 30 دقيقة</span></div>
+    <div class="item-desc"><span class="l en">Detox · swelling reduction · post-surgical</span><span class="l de">Detox · Entstauung · Post-OP</span><span class="l ru">Детокс · уменьшение отёков · после операции</span><span class="l ar">تطهير · تقليل التورم · ما بعد الجراحة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 45</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Lymphatic Drainage — 60 min</span><span class="l de">Lymphdrainage — 60 Min.</span><span class="l ru">Лимфодренажный Массаж — 60 Мин.</span><span class="l ar">الصرف اللمفاوي — 60 دقيقة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 70</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Lymphatic Drainage — 90 min</span><span class="l de">Lymphdrainage — 90 Min.</span><span class="l ru">Лимфодренажный Массаж — 90 Мин.</span><span class="l ar">الصرف اللمفاوي — 90 دقيقة</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 95</div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Electro & Device Therapy</span><span class="l de">Elektro- & Gerätetherapie</span><span class="l ru">Электро и Аппаратная Терапия</span><span class="l ar">العلاج الكهربائي والجهازي</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">TENS Therapy</span><span class="l de">TENS-Therapie</span><span class="l ru">TENS-Терапия</span><span class="l ar">علاج TENS</span></div>
+    <div class="item-desc"><span class="l en">Pain reduction & muscle activation</span><span class="l de">Schmerzreduktion & Muskelaktivierung</span><span class="l ru">Снижение боли & стимуляция мышц</span><span class="l ar">تخفيف الألم وتنشيط العضلات</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 25</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Ultrasound Therapy</span><span class="l de">Ultraschalltherapie</span><span class="l ru">УЗ-Терапия</span><span class="l ar">العلاج بالموجات فوق الصوتية</span></div>
+    <div class="item-desc"><span class="l en">Deep tissue healing</span><span class="l de">Tiefe Gewebeheilung</span><span class="l ru">Глубокое заживление тканей</span><span class="l ar">التئام الأنسجة العميقة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 25</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Red Light Therapy</span><span class="l de">Rotlichttherapie</span><span class="l ru">Красная Светотерапия</span><span class="l ar">العلاج بالضوء الأحمر</span></div>
+    <div class="item-desc"><span class="l en">Inflammation reduction & recovery support</span><span class="l de">Entzündungshemmung & Erholungsunterstützung</span><span class="l ru">Уменьшение воспаления & восстановление</span><span class="l ar">تقليل الالتهاب ودعم التعافي</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 15</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Specialized Therapies</span><span class="l de">Spezialtherapien</span><span class="l ru">Специализированные Процедуры</span><span class="l ar">علاجات متخصصة</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Dry Cupping Therapy</span><span class="l de">Trockenschröpfen</span><span class="l ru">Сухое Баночное Массирование</span><span class="l ar">الحجامة الجافة</span></div>
+    <div class="item-desc"><span class="l en">Traditional tension release & circulation</span><span class="l de">Traditionelle Entspannung & Durchblutung</span><span class="l ru">Традиционное снятие напряжения & кровообращение</span><span class="l ar">تحرير التوتر التقليدي والدورة الدموية</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 35</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Wet Cupping (Hijama)</span><span class="l de">Nasses Schröpfen (Hijama)</span><span class="l ru">Влажное Баночное (Хиджама)</span><span class="l ar">الحجامة الرطبة</span></div>
+    <div class="item-desc"><span class="l en">Traditional detox & deep tissue therapy</span><span class="l de">Traditioneller Detox & Tiefengewebetherapie</span><span class="l ru">Традиционный детокс & глубокая терапия</span><span class="l ar">إزالة السموم التقليدية والعلاج العميق</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">TCM Acupuncture</span><span class="l de">TCM Akupunktur</span><span class="l ru">ТКМ Иглоукалывание</span><span class="l ar">الوخز بالإبر الصيني</span></div>
+    <div class="item-desc"><span class="l en">Pain · stress · fertility · digestive health</span><span class="l de">Schmerz · Stress · Fertilität · Verdauung</span><span class="l ru">Боль · стресс · фертильность · пищеварение</span><span class="l ar">الألم · الضغط · الخصوبة · الهضم</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Zero Gravity Massage Chair — 30 min</span><span class="l de">Zero-Gravity-Massagestuhl — 30 Min.</span><span class="l ru">Кресло Zero Gravity — 30 Мин.</span><span class="l ar">كرسي Zero Gravity — 30 دقيقة</span></div>
+    <div class="item-desc"><span class="l en">Full body relaxation incl. refreshment juice</span><span class="l de">Ganzkörperentspannung inkl. Erfrischungsgetränk</span><span class="l ru">Полное расслабление тела + сок в подарок</span><span class="l ar">استرخاء كامل للجسم + عصير</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 20</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Compression Therapy</span><span class="l de">Kompressionstherapie</span><span class="l ru">Компрессионная Терапия</span><span class="l ar">العلاج بالضغط</span></div>
+    <div class="item-desc"><span class="l en">Leg · arm · full body pneumatic recovery</span><span class="l de">Beine · Arme · Ganzkörper pneumatisch</span><span class="l ru">Ноги · руки · полное тело</span><span class="l ar">الساقين · الذراعين · الجسم كله</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 25</div></div>
+</div>
+
+
+</div>
+</div>
+<div class="cat-panel" id="panel-wellness">
+<div class="page-header">
+  <div class="logo-block"><img src="data:image/jpeg;base64,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" alt="RaVida"/></div>
+  <div class="divider-v"></div>
+  <div class="header-text">
+    <div class="header-brand">RaVida</div>
+    <div class="header-sub">Medical &amp; Holistic Clinic</div>
+    <div class="header-rule"></div>
+    <div class="header-cat"><span class="l en">Wellness & Holistic</span><span class="l de">Wellness & Holistik</span><span class="l ru">Велнес и Холистика</span><span class="l ar">العافية والشمولية</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+  </div>
+</div>
+<div class="banner">
+  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
+  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
+  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+</div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · السعر النهائي بعد الاستشارة الشخصية</span></div>
+<div class="content">
+<div class="section-hdr dark"><span class="l en">IV Therapy — Signature Drip Collection</span><span class="l de">IV-Therapie — Signature Drip Kollektion</span><span class="l ru">IV-Терапия — Коллекция Signature Drip</span><span class="l ar">العلاج الوريدي — مجموعة القطرات الحصرية</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Immortal Serenity</span><span class="l de">The Immortal Serenity</span><span class="l ru">The Immortal Serenity</span><span class="l ar">The Immortal Serenity</span></div>
+    <div class="item-desc"><span class="l en">NAD+ Longevity Drip · cellular longevity · anti-aging from within · energy renaissance</span><span class="l de">NAD+ Longevity Drip · zelluläre Langlebigkeit · Anti-Aging von innen · Energie-Renaissance</span><span class="l ru">NAD+ Longevity Drip · клеточное долголетие · анти-эйдж изнутри · энергетическое возрождение</span><span class="l ar">NAD+ · طول العمر الخلوي · مكافحة الشيخوخة · تجديد الطاقة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 230</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Vital Surge</span><span class="l de">The Vital Surge</span><span class="l ru">The Vital Surge</span><span class="l ar">The Vital Surge</span></div>
+    <div class="item-desc"><span class="l en">Fatigue reset · jet lag cocktail · hangover revival</span><span class="l de">Müdigkeit reset · Jet-Lag-Cocktail · Hangover-Revival</span><span class="l ru">Сброс усталости · коктейль от джетлага · восстановление после вечеринки</span><span class="l ar">إعادة التعافي من التعب · اضطراب السفر</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 175</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Glow Renewal</span><span class="l de">The Glow Renewal</span><span class="l ru">The Glow Renewal</span><span class="l ar">The Glow Renewal</span></div>
+    <div class="item-desc"><span class="l en">Skin radiance · deep detoxification · antioxidant surge</span><span class="l de">Hautleuchtkraft · Tiefenentgiftung · Antioxidans-Surge</span><span class="l ru">Сияние кожи · глубокая детоксикация · антиоксидантный всплеск</span><span class="l ar">إشراق البشرة · تطهير عميق · مضادات الأكسدة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 230</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Nile Hydration</span><span class="l de">The Nile Hydration</span><span class="l ru">The Nile Hydration</span><span class="l ar">The Nile Hydration</span></div>
+    <div class="item-desc"><span class="l en">Full cellular rehydration · mineral & vitamin restore</span><span class="l de">Vollständige Zellrehydration · Mineral- & Vitaminrestore</span><span class="l ru">Полная клеточная регидратация · минералы & витамины</span><span class="l ar">إعادة الترطيب الخلوي الكامل · المعادن والفيتامينات</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 175</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Ra's Elixir</span><span class="l de">Ra's Elixir</span><span class="l ru">Ra's Elixir</span><span class="l ar">Ra's Elixir</span></div>
+    <div class="item-desc"><span class="l en">Complete micronutrient reset · immunity & energy fusion</span><span class="l de">Vollständiger Mikronährstoff-Reset · Immunität & Energie-Fusion</span><span class="l ru">Полный сброс микронутриентов · иммунитет & энергия</span><span class="l ar">إعادة ضبط المغذيات الدقيقة · المناعة والطاقة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 175</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Phoenix</span><span class="l de">The Phoenix</span><span class="l ru">The Phoenix</span><span class="l ar">The Phoenix</span></div>
+    <div class="item-desc"><span class="l en">B-complex revival · burnout recovery · energy rebirth</span><span class="l de">B-Komplex-Revival · Burnout-Recovery · Energie-Wiedergeburt</span><span class="l ru">B-комплекс · восстановление от выгорания · возрождение энергии</span><span class="l ar">إحياء مجموعة B · التعافي من الإرهاق · تجديد الطاقة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 95</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Guardian</span><span class="l de">The Guardian</span><span class="l ru">The Guardian</span><span class="l ar">The Guardian</span></div>
+    <div class="item-desc"><span class="l en">Immune activation · micronutrient fortification · shield</span><span class="l de">Immunaktivierung · Mikronährstoffstärkung · Schutzschild</span><span class="l ru">Активация иммунитета · укрепление микронутриентами · защита</span><span class="l ar">تنشيط المناعة · تحصين المغذيات</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 175</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Cleopatra's Secret</span><span class="l de">Cleopatra's Secret</span><span class="l ru">Cleopatra's Secret</span><span class="l ar">Cleopatra's Secret</span></div>
+    <div class="item-desc"><span class="l en">Fat metabolism · body contouring support · lipotropic</span><span class="l de">Fettstoffwechsel · Körperkonturierung · Lipotrop</span><span class="l ru">Жировой обмен · поддержка контуринга · липотроп</span><span class="l ar">أيض الدهون · تشكيل الجسم · ليبوتروبيك</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 175</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Sahara Sunset</span><span class="l de">The Sahara Sunset</span><span class="l ru">The Sahara Sunset</span><span class="l ar">The Sahara Sunset</span></div>
+    <div class="item-desc"><span class="l en">Calm & nervous system support · mood lift · sleep quality</span><span class="l de">Ruhe & Nervensystem-Unterstützung · Stimmungslift · Schlafqualität</span><span class="l ru">Спокойствие & поддержка нервной системы · настроение · сон</span><span class="l ar">الهدوء · دعم الجهاز العصبي · تحسين المزاج والنوم</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 175</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Alchemist</span><span class="l de">The Alchemist</span><span class="l ru">The Alchemist</span><span class="l ar">The Alchemist</span></div>
+    <div class="item-desc"><span class="l en">Iron · multivitamin (prescription only)</span><span class="l de">Eisen · Multivitamin (nur auf Rezept)</span><span class="l ru">Железо · мультивитамин (только по рецепту)</span><span class="l ar">حديد · متعدد الفيتامينات (بوصفة طبية فقط)</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 105</div><div class="price-note">Rx required / Rezept erforderlich / нужен рецепт</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Golden Vessel · Signature Drip</span><span class="l de">The Golden Vessel · Signature Drip</span><span class="l ru">The Golden Vessel · Signature Drip</span><span class="l ar">The Golden Vessel · Signature Drip</span></div>
+    <div class="item-desc"><span class="l en">Tailored to your blood work & personal wellness goals</span><span class="l de">Abgestimmt auf Ihre Blutwerte & persönliche Wellnessziele</span><span class="l ru">Подобрано по вашим анализам & личным целям</span><span class="l ar">مُصمَّم وفق تحاليل الدم وأهدافك الشخصية</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 160</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">SC Therapy — Signature Shot Collection</span><span class="l de">SC-Therapie — Signature Shot Kollektion</span><span class="l ru">SC-Терапия — Коллекция Signature Shot</span><span class="l ar">علاج SC — مجموعة الحقن الحصرية</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Gladiator</span><span class="l de">The Gladiator</span><span class="l ru">The Gladiator</span><span class="l ar">The Gladiator</span></div>
+    <div class="item-desc"><span class="l en">Muscle repair · sports recovery · tissue regeneration</span><span class="l de">Muskelreparatur · Sporterholung · Geweberegeneration</span><span class="l ru">Восстановление мышц · спортивная регенерация · ткани</span><span class="l ar">إصلاح العضلات · التعافي الرياضي · تجديد الأنسجة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 220</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l de">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l ru">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l ar">The Nefertiti Essence · GHK-Cu Microneedling</span></div>
+    <div class="item-desc"><span class="l en">Collagen stimulation · skin renewal · anti-aging matrix</span><span class="l de">Kollagenstimulation · Hauterneuerung · Anti-Aging-Matrix</span><span class="l ru">Стимуляция коллагена · обновление кожи · анти-эйдж матрица</span><span class="l ar">تحفيز الكولاجين · تجديد البشرة · مصفوفة مكافحة الشيخوخة</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 230</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Eye of Horus</span><span class="l de">The Eye of Horus</span><span class="l ru">The Eye of Horus</span><span class="l ar">The Eye of Horus</span></div>
+    <div class="item-desc"><span class="l en">Neuro-regeneration · nerve support · mental resilience</span><span class="l de">Neuro-Regeneration · Nervenunterstützung · Mentale Resilienz</span><span class="l ru">Нейрорегенерация · поддержка нервов · ментальная устойчивость</span><span class="l ar">التجديد العصبي · دعم الأعصاب · المرونة العقلية</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 220</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Pharaoh's Cure</span><span class="l de">The Pharaoh's Cure</span><span class="l ru">The Pharaoh's Cure</span><span class="l ar">The Pharaoh's Cure</span></div>
+    <div class="item-desc"><span class="l en">Peak athletic performance · rapid regeneration · recovery</span><span class="l de">Maximale Sportleistung · schnelle Regeneration · Erholung</span><span class="l ru">Пиковая спортивная форма · быстрая регенерация · восстановление</span><span class="l ar">الأداء الرياضي الأمثل · التجديد السريع · التعافي</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 220</div><div class="labs">◆ labs required / ◆ Labor erforderlich / ◆ анализы обязательны</div></div>
+</div>
+<div class="note-box">
+  <span class="l en"><strong>Available upon prior request &amp; prepayment only.</strong> Each treatment is ordered explicitly for you.</span>
+  <span class="l de"><strong>Nur auf Voranfrage &amp; Vorkasse verfügbar.</strong> Jede Behandlung wird eigens für Sie reserviert.</span>
+  <span class="l ru"><strong>Доступно исключительно по предварительному заказу и предоплате.</strong> Препарат заказывается индивидуально для каждого пациента.</span>
+  <span class="l ar"><strong>متاح فقط بطلب مسبق ودفع مسبق.</strong> كل علاج يُطلب خصيصاً لك.</span>
+</div>
+<div class="note-box" style="margin-top:24px">
+  <span class="l en">◆ Treatments marked with ◆ require a prior blood test. Your doctor will arrange this during your consultation.<br>Our treatments are most effective when taken as a curated cycle of 4–6 sessions. <strong>Ask about our course packages.</strong></span>
+  <span class="l de">◆ Mit ◆ markierte Behandlungen erfordern einen vorherigen Bluttest. Ihr Arzt wird dies im Rahmen der Beratung arrangieren.<br>Unsere Behandlungen sind am wirksamsten als Zyklus von 4–6 Sitzungen. <strong>Fragen Sie nach unseren Kurspaketen.</strong></span>
+  <span class="l ru">◆ Процедуры с ◆ требуют предварительного анализа крови. Ваш врач организует это во время консультации.<br>Наши процедуры наиболее эффективны в виде цикла из 4–6 сеансов. <strong>Спросите о наших курсовых пакетах.</strong></span>
+  <span class="l ar">◆ العلاجات المميزة تتطلب فحص دم مسبق. الأكثر فاعلية كدورة من 4-6 جلسات. <strong>اسأل عن باقات الدورات.</strong></span>
+</div>
+</div>
+</div>
+<footer class="page-footer">
+  <div><span class="gold">+20 121 497 9692</span><span class="dot">◆</span><span class="gold">info@ravida.io</span><span class="dot">◆</span><span class="gold">ravida.io</span></div>
+  <div>Taksim, Zahabia St., Tiba Gold, Hurghada, Egypt</div>
+  <div style="font-size:10.5px;opacity:.5;margin-top:4px"><span class="l en">All prices in EUR · Grand Opening prices · 2026</span><span class="l de">Alle Preise in EUR · Eröffnungspreise · 2026</span><span class="l ru">Все цены в EUR · Цены открытия · 2026</span><span class="l ar">جميع الأسعار بالـ EUR · أسعار الافتتاح · 2026</span></div>
+</footer>
+<script>
+function setLang(lang,btn){
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.body.className = 'lang-'+lang + (lang==='ar' ? ' ar-mode' : '');
+  document.documentElement.dir = lang==='ar' ? 'rtl' : 'ltr';
+}
+function setCat(cat,btn){
+  document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.cat-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel-'+cat).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
