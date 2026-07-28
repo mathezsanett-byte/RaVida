@@ -4,12 +4,12 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>RaVida – Price Guide 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&family=Noto+Sans+Arabic:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--gold:#B8952A;--gold2:#D4A832;--dark:#3A3D40;--text:#2C2C2C;--gray:#777;--white:#fff;--red:#8B1A1A}
 body{font-family:'Lato',sans-serif;background:#fff;color:var(--text);max-width:860px;margin:0 auto;font-size:15px}
-body.ar-mode{font-family:'Noto Sans Arabic',sans-serif}
+
 .sticky-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #e8e0d0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .lang-bar{background:var(--dark);display:flex;justify-content:flex-end;gap:6px;padding:6px 28px}
 .lang-btn{background:transparent;border:1px solid rgba(255,255,255,.25);color:#bbb;padding:3px 11px;border-radius:20px;font-size:11px;letter-spacing:.08em;cursor:pointer;font-family:inherit;transition:all .2s}
@@ -55,7 +55,7 @@ body.ar-mode{font-family:'Noto Sans Arabic',sans-serif}
 body.lang-en .l.en{display:inline}
 body.lang-de .l.de{display:inline}
 body.lang-ru .l.ru{display:inline}
-body.lang-ar .l.ar{display:inline}
+body.lang-sk .l.sk{display:inline}
 @media(max-width:600px){
   .page-header{padding:18px 16px 14px}
   .logo-block{min-width:80px}.logo-block img{width:75px}
@@ -73,12 +73,12 @@ body.lang-ar .l.ar{display:inline}
     <button class="lang-btn active" onclick="setLang('en',this)">EN</button>
     <button class="lang-btn" onclick="setLang('de',this)">DE</button>
     <button class="lang-btn" onclick="setLang('ru',this)">RU</button>
-    <button class="lang-btn" onclick="setLang('ar',this)">AR</button>
+    <button class="lang-btn" onclick="setLang('sk',this)">SK</button>
   </div>
-  <div class="cat-bar"><button class="cat-btn active" onclick="setCat('aesthetic',this)"><span class="l en">Aesthetic &amp; Beauty</span><span class="l de">Ästhetik &amp; Schönheit</span><span class="l ru">Эстетика</span><span class="l ar">التجميل</span></button>
-<button class="cat-btn" onclick="setCat('medical',this)"><span class="l en">Medical Services</span><span class="l de">Medizinische Leistungen</span><span class="l ru">Медицина</span><span class="l ar">الطب</span></button>
-<button class="cat-btn" onclick="setCat('physio',this)"><span class="l en">Physio &amp; Recovery</span><span class="l de">Physiotherapie</span><span class="l ru">Физиотерапия</span><span class="l ar">العلاج الطبيعي</span></button>
-<button class="cat-btn" onclick="setCat('wellness',this)"><span class="l en">Wellness &amp; IV</span><span class="l de">Wellness &amp; IV</span><span class="l ru">Велнес &amp; IV</span><span class="l ar">العافية و IV</span></button>
+  <div class="cat-bar"><button class="cat-btn active" onclick="setCat('aesthetic',this)"><span class="l en">Aesthetic &amp; Beauty</span><span class="l de">Ästhetik &amp; Schönheit</span><span class="l ru">Эстетика</span><span class="l sk">Estetika a krása</span></button>
+<button class="cat-btn" onclick="setCat('medical',this)"><span class="l en">Medical Services</span><span class="l de">Medizinische Leistungen</span><span class="l ru">Медицина</span><span class="l sk">Zdravotnícke služby</span></button>
+<button class="cat-btn" onclick="setCat('physio',this)"><span class="l en">Physio &amp; Recovery</span><span class="l de">Physiotherapie</span><span class="l ru">Физиотерапия</span><span class="l sk">Fyzioterapia</span></button>
+<button class="cat-btn" onclick="setCat('wellness',this)"><span class="l en">Wellness &amp; IV</span><span class="l de">Wellness &amp; IV</span><span class="l ru">Велнес &amp; IV</span><span class="l sk">Wellness a IV</span></button>
 </div>
 </div>
 <div class="cat-panel active" id="panel-aesthetic">
@@ -89,253 +89,257 @@ body.lang-ar .l.ar{display:inline}
     <div class="header-brand">RaVida</div>
     <div class="header-sub">Medical &amp; Holistic Clinic</div>
     <div class="header-rule"></div>
-    <div class="header-cat"><span class="l en">Aesthetic & Beauty</span><span class="l de">Ästhetik & Schönheit</span><span class="l ru">Эстетика и Красота</span><span class="l ar">التجميل والجمال</span></div>
-    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+    <div class="header-cat"><span class="l en">Aesthetic & Beauty</span><span class="l de">Ästhetik & Schönheit</span><span class="l ru">Эстетика и Красота</span><span class="l sk">Estetika a krása</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l sk">Cenník · Hurghada · 2026</span></div>
   </div>
 </div>
 <div class="banner">
-  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
-  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
-  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
-  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l sk">Poplatok za konzultáciu: €10 — započítaný do ceny ošetrenia pri rezervácii</span> ★</div>
 </div>
-<div class="info-line"><span class="l en">All prices in EUR (€) · Premium products from France, Germany & Switzerland · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Premiumprodukte aus Frankreich, Deutschland & der Schweiz · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Премиальные продукты из Франции, Германии и Швейцарии · Окончательная цена после консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · منتجات من فرنسا وألمانيا وسويسرا · السعر النهائي بعد الاستشارة</span></div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Premium products from France, Germany & Switzerland · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Premiumprodukte aus Frankreich, Deutschland & der Schweiz · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Премиальные продукты из Франции, Германии и Швейцарии · Окончательная цена после консультации</span><span class="l sk">Všetky ceny v EUR (€) · Prémiové produkty z Francúzska, Nemecka a Švajčiarska · Konečná cena po osobnej konzultácii</span></div>
 <div class="content">
-<div class="section-hdr dark"><span class="l en">Botox & Neuromodulators</span><span class="l de">Botox & Neuromodulatoren</span><span class="l ru">Ботокс и Нейромодуляторы</span><span class="l ar">البوتوكس والمُعدِّلات العصبية</span></div>
+<div class="section-hdr dark"><span class="l en">Botox & Neuromodulators</span><span class="l de">Botox & Neuromodulatoren</span><span class="l ru">Ботокс и Нейромодуляторы</span><span class="l sk">Botox a neuromodulátory</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Botox Upper Face</span><span class="l de">Botox Oberes Gesicht</span><span class="l ru">Ботокс — Верхняя Зона Лица</span><span class="l ar">بوتوكس الوجه العلوي</span></div>
-    <div class="item-desc"><span class="l en">Forehead · frown lines · crow's feet</span><span class="l de">Stirn · Zornesfalten · Krähenfüße</span><span class="l ru">Лоб · межбровные складки · гусиные лапки</span><span class="l ar">الجبهة · تجاعيد الغضب · حواف العينين</span></div>
+    <div class="item-name"><span class="l en">Botox Upper Face</span><span class="l de">Botox Oberes Gesicht</span><span class="l ru">Ботокс — Верхняя Зона Лица</span><span class="l sk">Botox — horná časť tváre</span></div>
+    <div class="item-desc"><span class="l en">Forehead · frown lines · crow's feet</span><span class="l de">Stirn · Zornesfalten · Krähenfüße</span><span class="l ru">Лоб · межбровные складки · гусиные лапки</span><span class="l sk">Čelo · vrásky medzi obočím · vrásky okolo očí</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 110</div></div>
+  <div class="item-right"><div class="item-price">€ 119</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Botox Lower Face</span><span class="l de">Botox Unteres Gesicht</span><span class="l ru">Ботокс — Нижняя Зона Лица</span><span class="l ar">بوتوكس الوجه السفلي</span></div>
-    <div class="item-desc"><span class="l en">Gummy smile · nose · lip flip · DAO · chin</span><span class="l de">Zahnfleischlächeln · Nase · Lip Flip · DAO · Kinn</span><span class="l ru">Улыбка дёсен · нос · флип губ · DAO · подбородок</span><span class="l ar">الابتسامة اللثوية · الأنف · الشفاه · الذقن</span></div>
+    <div class="item-name"><span class="l en">Botox Lower Face</span><span class="l de">Botox Unteres Gesicht</span><span class="l ru">Ботокс — Нижняя Зона Лица</span><span class="l sk">Botox — dolná časť tváre</span></div>
+    <div class="item-desc"><span class="l en">Gummy smile · nose · lip flip · DAO · chin</span><span class="l de">Zahnfleischlächeln · Nase · Lip Flip · DAO · Kinn</span><span class="l ru">Улыбка дёсен · нос · флип губ · DAO · подбородок</span><span class="l sk">Ďasnový úsmev · nos · lip flip · DAO · brada</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 100 – € 170</div></div>
+  <div class="item-right"><div class="item-price">€ 130 – € 189</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Botox Full Face</span><span class="l de">Botox Ganzes Gesicht</span><span class="l ru">Ботокс — Всё Лицо</span><span class="l ar">بوتوكس الوجه كامل</span></div>
-    <div class="item-desc"><span class="l en">Complete upper & lower face treatment</span><span class="l de">Vollständige Behandlung oben & unten</span><span class="l ru">Комплексная обработка верхней и нижней зон</span><span class="l ar">علاج شامل للوجه العلوي والسفلي</span></div>
+    <div class="item-name"><span class="l en">Botox Full Face</span><span class="l de">Botox Ganzes Gesicht</span><span class="l ru">Ботокс — Всё Лицо</span><span class="l sk">Botox — celá tvár</span></div>
+    <div class="item-desc"><span class="l en">Complete upper & lower face treatment</span><span class="l de">Vollständige Behandlung oben & unten</span><span class="l ru">Комплексная обработка верхней и нижней зон</span><span class="l sk">Kompletné ošetrenie hornej a dolnej časti tváre</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 220</div></div>
+  <div class="item-right"><div class="item-price">€ 245</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Masseter Botox</span><span class="l de">Masseter-Botox</span><span class="l ru">Массетер-Ботокс</span><span class="l ar">بوتوكس العضلة الماضغة</span></div>
-    <div class="item-desc"><span class="l en">Jaw slimming & bruxism treatment</span><span class="l de">Kieferverschlankung & Bruxismus-Behandlung</span><span class="l ru">Коррекция овала лица & лечение бруксизма</span><span class="l ar">تنحيف الفك وعلاج صرير الأسنان</span></div>
+    <div class="item-name"><span class="l en">Masseter Botox</span><span class="l de">Masseter-Botox</span><span class="l ru">Массетер-Ботокс</span><span class="l sk">Masseter Botox</span></div>
+    <div class="item-desc"><span class="l en">Jaw slimming & bruxism treatment</span><span class="l de">Kieferverschlankung & Bruxismus-Behandlung</span><span class="l ru">Коррекция овала лица & лечение бруксизма</span><span class="l sk">Zúženie čeľuste a liečba bruxizmu</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 160</div></div>
+  <div class="item-right"><div class="item-price">€ 149</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Nefertiti Lift</span><span class="l de">Nefertiti-Lift</span><span class="l ru">Нефертити-Лифт</span><span class="l ar">رفع نيفرتيتي</span></div>
-    <div class="item-desc"><span class="l en">Neck rejuvenation & jawline definition</span><span class="l de">Halsstraffung & Kieferliniendefinition</span><span class="l ru">Омоложение шеи & контуринг нижней челюсти</span><span class="l ar">تجديد شباب الرقبة وتحديد خط الفك</span></div>
+    <div class="item-name"><span class="l en">Nefertiti Lift</span><span class="l de">Nefertiti-Lift</span><span class="l ru">Нефертити-Лифт</span><span class="l sk">Nefertiti lift</span></div>
+    <div class="item-desc"><span class="l en">Neck rejuvenation & jawline definition</span><span class="l de">Halsstraffung & Kieferliniendefinition</span><span class="l ru">Омоложение шеи & контуринг нижней челюсти</span><span class="l sk">Omladenie krku a definícia línie čeľuste</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 150 – € 210</div></div>
+  <div class="item-right"><div class="item-price">€ 235</div></div>
 </div>
-<div class="section-hdr gold"><span class="l en">Dermal Fillers — Swiss Premium</span><span class="l de">Dermale Filler — Schweizer Premium</span><span class="l ru">Дермальные Филлеры — Швейцарский Премиум</span><span class="l ar">حشوات الجلد — السويسرية</span></div>
+<div class="section-hdr gold"><span class="l en">Dermal Fillers — Swiss Premium</span><span class="l de">Dermale Filler — Schweizer Premium</span><span class="l ru">Дермальные Филлеры — Швейцарский Премиум</span><span class="l sk">Dermálne výplne — švajčiarska prémiová kvalita</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Dermal Filler</span><span class="l de">Dermaler Filler</span><span class="l ru">Дермальный Филлер</span><span class="l ar">حشو الجلد</span></div>
-    <div class="item-desc"><span class="l en">Lip enhancement · cheek · jawline · chin · under-eye</span><span class="l de">Lippenvolumen · Wangen · Kiefer · Kinn · Augenringe</span><span class="l ru">Губы · скулы · овал · подбородок · периорбитальная зона</span><span class="l ar">الشفاه · الخدود · الفك · الذقن · تحت العينين</span></div>
+    <div class="item-name"><span class="l en">Dermal Filler</span><span class="l de">Dermaler Filler</span><span class="l ru">Дермальный Филлер</span><span class="l sk">Dermálna výplň</span></div>
+    <div class="item-desc"><span class="l en">Lip enhancement · cheek · jawline · chin · under-eye</span><span class="l de">Lippenvolumen · Wangen · Kiefer · Kinn · Augenringe</span><span class="l ru">Губы · скулы · овал · подбородок · периорбитальная зона</span><span class="l sk">Zväčšenie pier · lícne kosti · línia čeľuste · brada · oblasť pod očami</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 170 – € 210</div><div class="price-note"><span class="l en">per syringe</span><span class="l de">pro Spritze</span><span class="l ru">за шприц</span><span class="l ar">لكل حقنة</span></div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Skin Boosters</span><span class="l de">Skin Booster</span><span class="l ru">Скин-Бустеры</span><span class="l ar">معززات البشرة</span></div>
-    <div class="item-desc"><span class="l en">Skin hydration · glow & texture improvement</span><span class="l de">Hautfeuchtigkeit · Glow & Texturverbesserung</span><span class="l ru">Увлажнение кожи · сияние & улучшение текстуры</span><span class="l ar">ترطيب البشرة وتحسين البريق والملمس</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 120 – € 145</div></div>
+  <div class="item-right"><div class="item-price">€ 189 – € 235</div><div class="price-note"><span class="l en">per syringe</span><span class="l de">pro Spritze</span><span class="l ru">за шприц</span><span class="l sk">za injekciu</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Biostimulators</span><span class="l de">Biostimulatoren</span><span class="l ru">Биостимуляторы</span><span class="l ar">المحفزات الحيوية</span></div>
-    <div class="item-desc"><span class="l en">Collagen stimulation · improves firmness & elasticity</span><span class="l de">Kollagenstimulation · verbessert Festigkeit & Elastizität</span><span class="l ru">Стимуляция коллагена · упругость & эластичность</span><span class="l ar">تحفيز الكولاجين والثبات والمرونة</span></div>
+    <div class="item-name"><span class="l en">Skin Boosters</span><span class="l de">Skin Booster</span><span class="l ru">Скин-Бустеры</span><span class="l sk">Skin Boostery</span></div>
+    <div class="item-desc"><span class="l en">Skin hydration · glow & texture improvement</span><span class="l de">Hautfeuchtigkeit · Glow & Texturverbesserung</span><span class="l ru">Увлажнение кожи · сияние & улучшение текстуры</span><span class="l sk">Hydratácia pokožky · žiara a zlepšenie textúry</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 250</div></div>
-</div>
-<div class="section-hdr dark"><span class="l en">Mesotherapy</span><span class="l de">Mesotherapie</span><span class="l ru">Мезотерапия</span><span class="l ar">العلاج الميزوي</span></div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Mesotherapy — Face</span><span class="l de">Mesotherapie — Gesicht</span><span class="l ru">Мезотерапия — Лицо</span><span class="l ar">ميزوثيرابي — الوجه</span></div>
-    <div class="item-desc"><span class="l en">Skin rejuvenation · vitamins & hydration</span><span class="l de">Hautverjüngung · Vitamine & Hydration</span><span class="l ru">Омоложение кожи · витамины & увлажнение</span><span class="l ar">تجديد البشرة · الفيتامينات والترطيب</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 90</div><div class="price-note"><span class="l en">per session</span><span class="l de">pro Sitzung</span><span class="l ru">за сеанс</span><span class="l ar">لكل جلسة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 135 – € 159</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Mesotherapy — Hair</span><span class="l de">Mesotherapie — Haare</span><span class="l ru">Мезотерапия — Волосы</span><span class="l ar">ميزوثيرابي — الشعر</span></div>
-    <div class="item-desc"><span class="l en">Strengthening & growth stimulation</span><span class="l de">Stärkung & Wachstumsstimulation</span><span class="l ru">Укрепление & стимуляция роста</span><span class="l ar">تقوية وتحفيز النمو</span></div>
+    <div class="item-name"><span class="l en">Biostimulators</span><span class="l de">Biostimulatoren</span><span class="l ru">Биостимуляторы</span><span class="l sk">Biostimulátory</span></div>
+    <div class="item-desc"><span class="l en">Collagen stimulation · improves firmness & elasticity</span><span class="l de">Kollagenstimulation · verbessert Festigkeit & Elastizität</span><span class="l ru">Стимуляция коллагена · упругость & эластичность</span><span class="l sk">Stimulácia kolagénu · zlepšuje pevnosť a elasticitu</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 100</div><div class="price-note"><span class="l en">per session</span><span class="l de">pro Sitzung</span><span class="l ru">за сеанс</span><span class="l ar">لكل جلسة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 289</div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Mesotherapy</span><span class="l de">Mesotherapie</span><span class="l ru">Мезотерапия</span><span class="l sk">Mezoterapia</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Mesotherapy — Face</span><span class="l de">Mesotherapie — Gesicht</span><span class="l ru">Мезотерапия — Лицо</span><span class="l sk">Mezoterapia — tvár</span></div>
+    <div class="item-desc"><span class="l en">Skin rejuvenation · vitamins & hydration</span><span class="l de">Hautverjüngung · Vitamine & Hydration</span><span class="l ru">Омоложение кожи · витамины & увлажнение</span><span class="l sk">Omladenie pokožky · vitamíny a hydratácia</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 99</div><div class="price-note"><span class="l en">per session</span><span class="l de">pro Sitzung</span><span class="l ru">за сеанс</span><span class="l sk">za sedenie</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Mesotherapy — Body</span><span class="l de">Mesotherapie — Körper</span><span class="l ru">Мезотерапия — Тело</span><span class="l ar">ميزوثيرابي — الجسم</span></div>
-    <div class="item-desc"><span class="l en">Localized fat reduction</span><span class="l de">Lokalisierte Fettreduktion</span><span class="l ru">Локальное уменьшение жировых отложений</span><span class="l ar">تقليل الدهون الموضعية</span></div>
+    <div class="item-name"><span class="l en">Mesotherapy — Hair</span><span class="l de">Mesotherapie — Haare</span><span class="l ru">Мезотерапия — Волосы</span><span class="l sk">Mezoterapia — vlasy</span></div>
+    <div class="item-desc"><span class="l en">Strengthening & growth stimulation</span><span class="l de">Stärkung & Wachstumsstimulation</span><span class="l ru">Укрепление & стимуляция роста</span><span class="l sk">Posilnenie a stimulácia rastu</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 110</div><div class="price-note"><span class="l en">per session</span><span class="l de">pro Sitzung</span><span class="l ru">за сеанс</span><span class="l ar">لكل جلسة</span></div></div>
-</div>
-<div class="section-hdr gold"><span class="l en">Skin Treatments</span><span class="l de">Hautbehandlungen</span><span class="l ru">Процедуры по Уходу за Кожей</span><span class="l ar">علاجات البشرة</span></div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Skincare Glow</span><span class="l de">Skincare Glow</span><span class="l ru">Skincare Glow</span><span class="l ar">Skincare Glow</span></div>
-    <div class="item-desc"><span class="l en">Cleansing · toning · targeted glow treatment</span><span class="l de">Reinigung · Tonung · gezieltes Glow-Treatment</span><span class="l ru">Очищение · тонизирование · процедура сияния</span><span class="l ar">تنظيف · ترطيب · علاج الإشراق</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 30</div></div>
+  <div class="item-right"><div class="item-price">€ 109</div><div class="price-note"><span class="l en">per session</span><span class="l de">pro Sitzung</span><span class="l ru">за сеанс</span><span class="l sk">za sedenie</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Skincare RaVida</span><span class="l de">Skincare RaVida</span><span class="l ru">Skincare RaVida</span><span class="l ar">Skincare RaVida</span></div>
-    <div class="item-desc"><span class="l en">Face massage deluxe · deep nourishing ritual</span><span class="l de">Gesichtsmassage Deluxe · tiefes Nähreritual</span><span class="l ru">Делюкс-массаж лица · глубокое питание</span><span class="l ar">مساج الوجه الفاخر · طقوس التغذية العميقة</span></div>
+    <div class="item-name"><span class="l en">Mesotherapy — Body</span><span class="l de">Mesotherapie — Körper</span><span class="l ru">Мезотерапия — Тело</span><span class="l sk">Mezoterapia — telo</span></div>
+    <div class="item-desc"><span class="l en">Localized fat reduction</span><span class="l de">Lokalisierte Fettreduktion</span><span class="l ru">Локальное уменьшение жировых отложений</span><span class="l sk">Lokálna redukcia tuku</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 40</div></div>
+  <div class="item-right"><div class="item-price">€ 119</div><div class="price-note"><span class="l en">per session</span><span class="l de">pro Sitzung</span><span class="l ru">за сеанс</span><span class="l sk">za sedenie</span></div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Skin Treatments</span><span class="l de">Hautbehandlungen</span><span class="l ru">Процедуры по Уходу за Кожей</span><span class="l sk">Ošetrenia pokožky</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Skincare Glow</span><span class="l de">Skincare Glow</span><span class="l ru">Skincare Glow</span><span class="l sk">Skincare Glow</span></div>
+    <div class="item-desc"><span class="l en">Cleansing · toning · targeted glow treatment</span><span class="l de">Reinigung · Tonung · gezieltes Glow-Treatment</span><span class="l ru">Очищение · тонизирование · процедура сияния</span><span class="l sk">Čistenie · tonizácia · cielené ošetrenie pre žiarivú pleť</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 33</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">HydraFacial — Basic</span><span class="l de">HydraFacial — Basic</span><span class="l ru">HydraFacial — Basic</span><span class="l ar">HydraFacial — Basic</span></div>
-    <div class="item-desc"><span class="l en">Deep cleansing · exfoliation · hydration</span><span class="l de">Tiefenreinigung · Peeling · Hydration</span><span class="l ru">Глубокое очищение · эксфолиация · увлажнение</span><span class="l ar">تنظيف عميق · تقشير · ترطيب</span></div>
+    <div class="item-name"><span class="l en">Skincare RaVida</span><span class="l de">Skincare RaVida</span><span class="l ru">Skincare RaVida</span><span class="l sk">Skincare RaVida</span></div>
+    <div class="item-desc"><span class="l en">Face massage deluxe · deep nourishing ritual</span><span class="l de">Gesichtsmassage Deluxe · tiefes Nähreritual</span><span class="l ru">Делюкс-массаж лица · глубокое питание</span><span class="l sk">Luxusná masáž tváre · hlboko vyživujúci rituál</span></div>
   </div>
   <div class="item-right"><div class="item-price">€ 40</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">HydraFacial — VIP</span><span class="l de">HydraFacial — VIP</span><span class="l ru">HydraFacial — VIP</span><span class="l ar">HydraFacial — VIP</span></div>
-    <div class="item-desc"><span class="l en">Advanced protocol + LED therapy + targeted serums</span><span class="l de">Erweitertes Protokoll + LED-Therapie + Seren</span><span class="l ru">Расширенный протокол + LED-терапия + сыворотки</span><span class="l ar">بروتوكول متقدم + علاج LED + أمصال</span></div>
+    <div class="item-name"><span class="l en">HydraFacial — Basic</span><span class="l de">HydraFacial — Basic</span><span class="l ru">HydraFacial — Basic</span><span class="l sk">HydraFacial — Basic</span></div>
+    <div class="item-desc"><span class="l en">Deep cleansing · exfoliation · hydration</span><span class="l de">Tiefenreinigung · Peeling · Hydration</span><span class="l ru">Глубокое очищение · эксфолиация · увлажнение</span><span class="l sk">Hĺbkové čistenie · exfoliácia · hydratácia</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 50</div></div>
+  <div class="item-right"><div class="item-price">€ 45</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">HydraFacial — VIP+</span><span class="l de">HydraFacial — VIP+</span><span class="l ru">HydraFacial — VIP+</span><span class="l ar">HydraFacial — VIP+</span></div>
-    <div class="item-desc"><span class="l en">Full protocol + antioxidant infusion + booster</span><span class="l de">Vollprotokoll + Antioxidans-Infusion + Booster</span><span class="l ru">Полный протокол + антиоксидантная инфузия + бустер</span><span class="l ar">البروتوكول الكامل + مضادات الأكسدة + معزز</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 79</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">HydraFacial — Upper Back</span><span class="l de">HydraFacial — Oberer Rücken</span><span class="l ru">HydraFacial — Верхняя Спина</span><span class="l ar">HydraFacial — الظهر العلوي</span></div>
-    <div class="item-desc"><span class="l en">Deep cleansing & hydration for upper back</span><span class="l de">Tiefenreinigung & Hydration für den oberen Rücken</span><span class="l ru">Глубокое очищение & увлажнение верхней части спины</span><span class="l ar">تنظيف عميق وترطيب للظهر العلوي</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 90</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">OxyGeneo 3-in-1</span><span class="l de">OxyGeneo 3-in-1</span><span class="l ru">OxyGeneo 3-в-1</span><span class="l ar">OxyGeneo 3-في-1</span></div>
-    <div class="item-desc"><span class="l en">Exfoliation · oxygenation · nutrient infusion</span><span class="l de">Peeling · Sauerstoffversorgung · Nährstoffinfusion</span><span class="l ru">Эксфолиация · оксигенация · инфузия питательных веществ</span><span class="l ar">تقشير · أكسجين · تزويد بالمغذيات</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 75</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">HIFU — Full Face & Neck</span><span class="l de">HIFU — Ganzes Gesicht & Hals</span><span class="l ru">HIFU — Лицо & Шея</span><span class="l ar">HIFU — الوجه والرقبة</span></div>
-    <div class="item-desc"><span class="l en">Non-surgical lifting & tightening</span><span class="l de">Nicht-chirurgisches Lifting & Straffung</span><span class="l ru">Неинвазивный лифтинг & подтяжка</span><span class="l ar">شد غير جراحي للوجه والرقبة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 95</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">HIFU — Body Contouring</span><span class="l de">HIFU — Körperkonturierung</span><span class="l ru">HIFU — Контуринг Тела</span><span class="l ar">HIFU — تشكيل الجسم</span></div>
-    <div class="item-desc"><span class="l en">Targeted area tightening</span><span class="l de">Gezielte Bereichsstraffung</span><span class="l ru">Подтяжка целевых зон</span><span class="l ar">شد المناطق المستهدفة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 100 – € 180</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Chemical Peel — Light</span><span class="l de">Chemisches Peeling — Leicht</span><span class="l ru">Химический Пилинг — Лёгкий</span><span class="l ar">التقشير الكيميائي — خفيف</span></div>
-    <div class="item-desc"><span class="l en">Superficial resurfacing & glow</span><span class="l de">Oberflächliche Erneuerung & Glow</span><span class="l ru">Поверхностное обновление & сияние</span><span class="l ar">تجديد سطحي وإشراق</span></div>
+    <div class="item-name"><span class="l en">HydraFacial — VIP</span><span class="l de">HydraFacial — VIP</span><span class="l ru">HydraFacial — VIP</span><span class="l sk">HydraFacial — VIP</span></div>
+    <div class="item-desc"><span class="l en">Advanced protocol + LED therapy + targeted serums</span><span class="l de">Erweitertes Protokoll + LED-Therapie + Seren</span><span class="l ru">Расширенный протокол + LED-терапия + сыворотки</span><span class="l sk">Pokročilý protokol + LED terapia + cielené sérum</span></div>
   </div>
   <div class="item-right"><div class="item-price">€ 55</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Chemical Peel — Medium</span><span class="l de">Chemisches Peeling — Mittel</span><span class="l ru">Химический Пилинг — Средний</span><span class="l ar">التقشير الكيميائي — متوسط</span></div>
-    <div class="item-desc"><span class="l en">Deeper renewal & pigmentation</span><span class="l de">Tiefere Erneuerung & Pigmentierung</span><span class="l ru">Глубокое обновление & пигментация</span><span class="l ar">تجديد أعمق وعلاج التصبغ</span></div>
+    <div class="item-name"><span class="l en">HydraFacial — VIP+</span><span class="l de">HydraFacial — VIP+</span><span class="l ru">HydraFacial — VIP+</span><span class="l sk">HydraFacial — VIP+</span></div>
+    <div class="item-desc"><span class="l en">Full protocol + antioxidant infusion + booster</span><span class="l de">Vollprotokoll + Antioxidans-Infusion + Booster</span><span class="l ru">Полный протокол + антиоксидантная инфузия + бустер</span><span class="l sk">Kompletný protokol + antioxidačná infúzia + booster</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 89</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HydraFacial — Upper Back</span><span class="l de">HydraFacial — Oberer Rücken</span><span class="l ru">HydraFacial — Верхняя Спина</span><span class="l sk">HydraFacial — horná časť chrbta</span></div>
+    <div class="item-desc"><span class="l en">Deep cleansing & hydration for upper back</span><span class="l de">Tiefenreinigung & Hydration für den oberen Rücken</span><span class="l ru">Глубокое очищение & увлажнение верхней части спины</span><span class="l sk">Hĺbkové čistenie a hydratácia hornej časti chrbta</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 99</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">HydraFacial — Underarm</span><span class="l de">HydraFacial — Achselhöhle</span><span class="l ru">HydraFacial — Подмышки</span><span class="l sk">HydraFacial — podpazušie</span></div>
+    <div class="item-desc"><span class="l en">Deep cleansing & hydration for the underarm area</span><span class="l de">Tiefenreinigung & Hydration für die Achselhöhle</span><span class="l ru">Глубокое очищение & увлажнение подмышечной зоны</span><span class="l sk">Hĺbkové čistenie a hydratácia oblasti podpazušia</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 79</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">OxyGeneo 3-in-1</span><span class="l de">OxyGeneo 3-in-1</span><span class="l ru">OxyGeneo 3-в-1</span><span class="l sk">OxyGeneo 3 v 1</span></div>
+    <div class="item-desc"><span class="l en">Exfoliation · oxygenation · nutrient infusion</span><span class="l de">Peeling · Sauerstoffversorgung · Nährstoffinfusion</span><span class="l ru">Эксфолиация · оксигенация · инфузия питательных веществ</span><span class="l sk">Exfoliácia · okysličenie · infúzia živín</span></div>
   </div>
   <div class="item-right"><div class="item-price">€ 85</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Chemical Peel — Deep</span><span class="l de">Chemisches Peeling — Tief</span><span class="l ru">Химический Пилинг — Глубокий</span><span class="l ar">التقشير الكيميائي — عميق</span></div>
-    <div class="item-desc"><span class="l en">Intensive resurfacing treatment · consultation required</span><span class="l de">Intensive Erneuerungsbehandlung · Beratung erforderlich</span><span class="l ru">Интенсивное омоложение кожи · требуется консультация</span><span class="l ar">علاج تجديد مكثف · يلزم الاستشارة</span></div>
+    <div class="item-name"><span class="l en">HIFU — Full Face & Neck</span><span class="l de">HIFU — Ganzes Gesicht & Hals</span><span class="l ru">HIFU — Лицо & Шея</span><span class="l sk">HIFU — tvár a krk</span></div>
+    <div class="item-desc"><span class="l en">Non-surgical lifting & tightening</span><span class="l de">Nicht-chirurgisches Lifting & Straffung</span><span class="l ru">Неинвазивный лифтинг & подтяжка</span><span class="l sk">Neinvazívny lifting a spevnenie</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 90 – € 150</div></div>
+  <div class="item-right"><div class="item-price">€ 105</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Microneedling — Face</span><span class="l de">Microneedling — Gesicht</span><span class="l ru">Микронидлинг — Лицо</span><span class="l ar">الوخز الدقيق — الوجه</span></div>
-    <div class="item-desc"><span class="l en">Collagen induction & rejuvenation</span><span class="l de">Kollagenbildung & Verjüngung</span><span class="l ru">Стимуляция коллагена & омоложение</span><span class="l ar">تحفيز الكولاجين والتجديد</span></div>
+    <div class="item-name"><span class="l en">HIFU — Body Contouring</span><span class="l de">HIFU — Körperkonturierung</span><span class="l ru">HIFU — Контуринг Тела</span><span class="l sk">HIFU — modelovanie tela</span></div>
+    <div class="item-desc"><span class="l en">Targeted area tightening</span><span class="l de">Gezielte Bereichsstraffung</span><span class="l ru">Подтяжка целевых зон</span><span class="l sk">Spevnenie cielených oblastí</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 90</div></div>
+  <div class="item-right"><div class="item-price">€ 109 – € 199</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Microneedling — Acne Scars</span><span class="l de">Microneedling — Aknenarben</span><span class="l ru">Микронидлинг — Шрамы от Акне</span><span class="l ar">الوخز الدقيق — ندوب حب الشباب</span></div>
-    <div class="item-desc"><span class="l en">Targeted scar remodeling</span><span class="l de">Gezielte Narbenbehandlung</span><span class="l ru">Коррекция рубцов</span><span class="l ar">إعادة تشكيل الندوب المستهدفة</span></div>
+    <div class="item-name"><span class="l en">Chemical Peel — Light</span><span class="l de">Chemisches Peeling — Leicht</span><span class="l ru">Химический Пилинг — Лёгкий</span><span class="l sk">Chemický peeling — jemný</span></div>
+    <div class="item-desc"><span class="l en">Superficial resurfacing & glow</span><span class="l de">Oberflächliche Erneuerung & Glow</span><span class="l ru">Поверхностное обновление & сияние</span><span class="l sk">Povrchová obnova a žiara</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 110</div></div>
+  <div class="item-right"><div class="item-price">€ 59</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Microneedling — Hair Restoration</span><span class="l de">Microneedling — Haarwiederherstellung</span><span class="l ru">Микронидлинг — Восстановление Волос</span><span class="l ar">الوخز الدقيق — استعادة الشعر</span></div>
-    <div class="item-desc"><span class="l en">Scalp stimulation & growth</span><span class="l de">Kopfhautstimulation & Wachstum</span><span class="l ru">Стимуляция кожи головы & рост</span><span class="l ar">تحفيز فروة الرأس والنمو</span></div>
+    <div class="item-name"><span class="l en">Chemical Peel — Medium</span><span class="l de">Chemisches Peeling — Mittel</span><span class="l ru">Химический Пилинг — Средний</span><span class="l sk">Chemický peeling — stredný</span></div>
+    <div class="item-desc"><span class="l en">Deeper renewal & pigmentation</span><span class="l de">Tiefere Erneuerung & Pigmentierung</span><span class="l ru">Глубокое обновление & пигментация</span><span class="l sk">Hlbšia obnova a pigmentácia</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 100</div></div>
-</div>
-<div class="section-hdr dark"><span class="l en">Plastic Surgery — Face</span><span class="l de">Plastische Chirurgie — Gesicht</span><span class="l ru">Пластическая Хирургия — Лицо</span><span class="l ar">الجراحة التجميلية — الوجه</span></div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Facelift</span><span class="l de">Facelift</span><span class="l ru">Подтяжка Лица</span><span class="l ar">شد الوجه</span></div>
-    <div class="item-desc"><span class="l en">Full · mini · neck lift</span><span class="l de">Voll · Mini · Halslift</span><span class="l ru">Полная · мини · подтяжка шеи</span><span class="l ar">كامل · ميني · شد الرقبة</span></div>
-  </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 95</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Rhinoplasty</span><span class="l de">Rhinoplastik</span><span class="l ru">Ринопластика</span><span class="l ar">تجميل الأنف</span></div>
-    <div class="item-desc"><span class="l en">Primary · revision · tip refinement · non-surgical</span><span class="l de">Primär · Revision · Spitzenkorrektur · nicht-chirurgisch</span><span class="l ru">Первичная · повторная · коррекция кончика · нехирургическая</span><span class="l ar">أولي · مراجعة · تحسين الطرف · غير جراحي</span></div>
+    <div class="item-name"><span class="l en">Chemical Peel — Deep</span><span class="l de">Chemisches Peeling — Tief</span><span class="l ru">Химический Пилинг — Глубокий</span><span class="l sk">Chemický peeling — hĺbkový</span></div>
+    <div class="item-desc"><span class="l en">Intensive resurfacing treatment · consultation required</span><span class="l de">Intensive Erneuerungsbehandlung · Beratung erforderlich</span><span class="l ru">Интенсивное омоложение кожи · требуется консультация</span><span class="l sk">Intenzívne obnovujúce ošetrenie · vyžaduje konzultáciu</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 99 – € 165</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Blepharoplasty</span><span class="l de">Blepharoplastik</span><span class="l ru">Блефаропластика</span><span class="l ar">جراحة الجفن</span></div>
-    <div class="item-desc"><span class="l en">Upper & lower eyelid surgery</span><span class="l de">Ober- & Unterlidchirurgie</span><span class="l ru">Хирургия верхнего & нижнего века</span><span class="l ar">جراحة الجفن العلوي والسفلي</span></div>
+    <div class="item-name"><span class="l en">Microneedling — Face</span><span class="l de">Microneedling — Gesicht</span><span class="l ru">Микронидлинг — Лицо</span><span class="l sk">Microneedling — tvár</span></div>
+    <div class="item-desc"><span class="l en">Collagen induction & rejuvenation</span><span class="l de">Kollagenbildung & Verjüngung</span><span class="l ru">Стимуляция коллагена & омоложение</span><span class="l sk">Indukcia kolagénu a omladenie</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 99</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Facial Implants</span><span class="l de">Gesichtsimplantate</span><span class="l ru">Имплантаты Лица</span><span class="l ar">غرسات الوجه</span></div>
-    <div class="item-desc"><span class="l en">Cheek · chin · jaw structural enhancement</span><span class="l de">Wangen · Kinn · Kiefer Strukturverbesserung</span><span class="l ru">Скулы · подбородок · нижняя челюсть</span><span class="l ar">الخد · الذقن · الفك</span></div>
+    <div class="item-name"><span class="l en">Microneedling — Acne Scars</span><span class="l de">Microneedling — Aknenarben</span><span class="l ru">Микронидлинг — Шрамы от Акне</span><span class="l sk">Microneedling — jazvy po akné</span></div>
+    <div class="item-desc"><span class="l en">Targeted scar remodeling</span><span class="l de">Gezielte Narbenbehandlung</span><span class="l ru">Коррекция рубцов</span><span class="l sk">Cielená úprava jaziev</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 119</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Fox Eye / Cat-Eye Lift</span><span class="l de">Fox Eye / Cat-Eye Lift</span><span class="l ru">Fox Eye / Cat-Eye Лифт</span><span class="l ar">رفع عين الثعلب</span></div>
-    <div class="item-desc"><span class="l en">Surgical lateral canthoplasty</span><span class="l de">Chirurgische laterale Kanthoplastik</span><span class="l ru">Хирургическая кантопластика</span><span class="l ar">رأب الزاوية الجانبية الجراحية</span></div>
+    <div class="item-name"><span class="l en">Microneedling — Hair Restoration</span><span class="l de">Microneedling — Haarwiederherstellung</span><span class="l ru">Микронидлинг — Восстановление Волос</span><span class="l sk">Microneedling — obnova vlasov</span></div>
+    <div class="item-desc"><span class="l en">Scalp stimulation & growth</span><span class="l de">Kopfhautstimulation & Wachstum</span><span class="l ru">Стимуляция кожи головы & рост</span><span class="l sk">Stimulácia pokožky hlavy a rastu</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 109</div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Plastic Surgery — Face</span><span class="l de">Plastische Chirurgie — Gesicht</span><span class="l ru">Пластическая Хирургия — Лицо</span><span class="l sk">Plastická chirurgia — tvár</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Facelift</span><span class="l de">Facelift</span><span class="l ru">Подтяжка Лица</span><span class="l sk">Facelift</span></div>
+    <div class="item-desc"><span class="l en">Full · mini · neck lift</span><span class="l de">Voll · Mini · Halslift</span><span class="l ru">Полная · мини · подтяжка шеи</span><span class="l sk">Kompletný · mini · lifting krku</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Dimple Creation · Lip Lift · Brow Lift</span><span class="l de">Grübchen · Lippenlift · Brauenlift</span><span class="l ru">Ямочки · Лифт Губ · Подтяжка Бровей</span><span class="l ar">الغمازات · رفع الشفاه · رفع الحاجب</span></div>
-    <div class="item-desc"><span class="l en">Facial detail refinement procedures</span><span class="l de">Gesichtsdetailverfeinerung</span><span class="l ru">Детальная коррекция черт лица</span><span class="l ar">إجراءات تحسين تفاصيل الوجه</span></div>
+    <div class="item-name"><span class="l en">Rhinoplasty</span><span class="l de">Rhinoplastik</span><span class="l ru">Ринопластика</span><span class="l sk">Rinoplastika</span></div>
+    <div class="item-desc"><span class="l en">Primary · revision · tip refinement · non-surgical</span><span class="l de">Primär · Revision · Spitzenkorrektur · nicht-chirurgisch</span><span class="l ru">Первичная · повторная · коррекция кончика · нехирургическая</span><span class="l sk">Primárna · revízna · úprava špičky · neinvazívna</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Nanofat Grafting</span><span class="l de">Nanofett-Transplantation</span><span class="l ru">Нанофат-Графтинг</span><span class="l ar">زرع نانوفات</span></div>
-    <div class="item-desc"><span class="l en">Dark circles & overall skin quality</span><span class="l de">Augenringe & allgemeine Hautqualität</span><span class="l ru">Тёмные круги & качество кожи</span><span class="l ar">الهالات السوداء وجودة البشرة العامة</span></div>
+    <div class="item-name"><span class="l en">Blepharoplasty</span><span class="l de">Blepharoplastik</span><span class="l ru">Блефаропластика</span><span class="l sk">Blefaroplastika</span></div>
+    <div class="item-desc"><span class="l en">Upper & lower eyelid surgery</span><span class="l de">Ober- & Unterlidchirurgie</span><span class="l ru">Хирургия верхнего & нижнего века</span><span class="l sk">Operácia horných a dolných viečok</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Facial Implants</span><span class="l de">Gesichtsimplantate</span><span class="l ru">Имплантаты Лица</span><span class="l sk">Tvárové implantáty</span></div>
+    <div class="item-desc"><span class="l en">Cheek · chin · jaw structural enhancement</span><span class="l de">Wangen · Kinn · Kiefer Strukturverbesserung</span><span class="l ru">Скулы · подбородок · нижняя челюсть</span><span class="l sk">Lícne kosti · brada · štrukturálne zlepšenie čeľuste</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Fox Eye / Cat-Eye Lift</span><span class="l de">Fox Eye / Cat-Eye Lift</span><span class="l ru">Fox Eye / Cat-Eye Лифт</span><span class="l sk">Fox Eye / Cat-Eye lift</span></div>
+    <div class="item-desc"><span class="l en">Surgical lateral canthoplasty</span><span class="l de">Chirurgische laterale Kanthoplastik</span><span class="l ru">Хирургическая кантопластика</span><span class="l sk">Chirurgická laterálna kantoplastika</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Dimple Creation · Lip Lift · Brow Lift</span><span class="l de">Grübchen · Lippenlift · Brauenlift</span><span class="l ru">Ямочки · Лифт Губ · Подтяжка Бровей</span><span class="l sk">Vytvorenie jamiek · lip lift · lifting obočia</span></div>
+    <div class="item-desc"><span class="l en">Facial detail refinement procedures</span><span class="l de">Gesichtsdetailverfeinerung</span><span class="l ru">Детальная коррекция черт лица</span><span class="l sk">Procedúry na zjemnenie detailov tváre</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Nanofat Grafting</span><span class="l de">Nanofett-Transplantation</span><span class="l ru">Нанофат-Графтинг</span><span class="l sk">Nanofat graft</span></div>
+    <div class="item-desc"><span class="l en">Dark circles & overall skin quality</span><span class="l de">Augenringe & allgemeine Hautqualität</span><span class="l ru">Тёмные круги & качество кожи</span><span class="l sk">Tmavé kruhy a celková kvalita pokožky</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 
 
@@ -349,184 +353,181 @@ body.lang-ar .l.ar{display:inline}
     <div class="header-brand">RaVida</div>
     <div class="header-sub">Medical &amp; Holistic Clinic</div>
     <div class="header-rule"></div>
-    <div class="header-cat"><span class="l en">Medical Services</span><span class="l de">Medizinische Leistungen</span><span class="l ru">Медицинские Услуги</span><span class="l ar">الخدمات الطبية</span></div>
-    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+    <div class="header-cat"><span class="l en">Medical Services</span><span class="l de">Medizinische Leistungen</span><span class="l ru">Медицинские Услуги</span><span class="l sk">Zdravotnícke služby</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l sk">Cenník · Hurghada · 2026</span></div>
   </div>
 </div>
 <div class="banner">
-  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
-  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
-  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
-  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l sk">Poplatok za konzultáciu: €10 — započítaný do ceny ošetrenia pri rezervácii</span> ★</div>
 </div>
-<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · السعر النهائي بعد الاستشارة الشخصية</span></div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l sk">Všetky ceny v EUR (€) · Konečná cena po osobnej konzultácii</span></div>
 <div class="content">
-<div class="section-hdr dark"><span class="l en">General Medical</span><span class="l de">Allgemeinmedizin</span><span class="l ru">Общая Медицина</span><span class="l ar">الطب العام</span></div>
+<div class="section-hdr dark"><span class="l en">General Medical</span><span class="l de">Allgemeinmedizin</span><span class="l ru">Общая Медицина</span><span class="l sk">Všeobecná medicína</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">General Consultation & Health Screening</span><span class="l de">Allgemeine Beratung & Gesundheitscheck</span><span class="l ru">Общая Консультация & Осмотр</span><span class="l ar">استشارة عامة وفحص صحي</span></div>
-    <div class="item-desc"><span class="l en">Full examination · preventive care · referrals</span><span class="l de">Volluntersuchung · Prävention · Überweisungen</span><span class="l ru">Полное обследование · профилактика · направления</span><span class="l ar">فحص كامل · رعاية وقائية · إحالات</span></div>
+    <div class="item-name"><span class="l en">General Consultation & Health Screening</span><span class="l de">Allgemeine Beratung & Gesundheitscheck</span><span class="l ru">Общая Консультация & Осмотр</span><span class="l sk">Všeobecná konzultácia a zdravotná prehliadka</span></div>
+    <div class="item-desc"><span class="l en">Full examination · preventive care · referrals</span><span class="l de">Volluntersuchung · Prävention · Überweisungen</span><span class="l ru">Полное обследование · профилактика · направления</span><span class="l sk">Kompletné vyšetrenie · preventívna starostlivosť · odporúčania</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 30</div></div>
+  <div class="item-right"><div class="item-price">€ 33</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">ECG & Cardiology Consultation</span><span class="l de">EKG & Kardiologie-Beratung</span><span class="l ru">ЭКГ</span><span class="l ar">EKG</span></div>
-    <div class="item-desc"><span class="l en">Cardiac monitoring · cardiac screening</span><span class="l de">Herzüberwachung · Kardiales Screening</span><span class="l ru"></span><span class="l ar">مراقبة القلب</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 45</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    <div class="item-name"><span class="l en">ECG</span><span class="l de">EKG</span><span class="l ru">ЭКГ</span><span class="l sk">EKG</span></div>
     
   </div>
-  <div class="item-right"><div class="item-price">€ 15</div></div>
-</div>
-<div class="section-hdr gold"><span class="l en">Gastroenterology</span><span class="l de">Gastroenterologie</span><span class="l ru">Гастроэнтерология</span><span class="l ar">أمراض الجهاز الهضمي</span></div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Gastroenterology Consultation</span><span class="l de">Gastroenterologie-Beratung</span><span class="l ru">Гастроэнтерологическая Консультация</span><span class="l ar">استشارة الجهاز الهضمي</span></div>
-    <div class="item-desc"><span class="l en">Digestive system · liver assessment</span><span class="l de">Verdauungssystem · Leberbeurteilung</span><span class="l ru">Пищеварительная система · оценка функции печени</span><span class="l ar">الجهاز الهضمي · تقييم الكبد</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 50</div></div>
+  <div class="item-right"><div class="item-price">€ 49</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l sk">Kontrolná konzultácia</span></div>
     
   </div>
-  <div class="item-right"><div class="item-price">€ 25</div></div>
+  <div class="item-right"><div class="item-price">€ 17</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Gastroenterology</span><span class="l de">Gastroenterologie</span><span class="l ru">Гастроэнтерология</span><span class="l sk">Gastroenterológia</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Gastroenterology Consultation</span><span class="l de">Gastroenterologie-Beratung</span><span class="l ru">Гастроэнтерологическая Консультация</span><span class="l sk">Gastroenterologická konzultácia</span></div>
+    <div class="item-desc"><span class="l en">Digestive system · liver assessment</span><span class="l de">Verdauungssystem · Leberbeurteilung</span><span class="l ru">Пищеварительная система · оценка функции печени</span><span class="l sk">Tráviaci systém · vyšetrenie pečene</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Upper GI Endoscopy (Gastroscopy)</span><span class="l de">Obere GI-Endoskopie (Gastroskopie)</span><span class="l ru">Гастроскопия (ФГДС)</span><span class="l ar">تنظير الجهاز الهضمي العلوي</span></div>
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l sk">Kontrolná konzultácia</span></div>
     
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 27</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Lower GI Endoscopy (Colonoscopy)</span><span class="l de">Untere GI-Endoskopie (Koloskopie)</span><span class="l ru">Колоноскопия</span><span class="l ar">تنظير القولون</span></div>
+    <div class="item-name"><span class="l en">Upper GI Endoscopy (Gastroscopy)</span><span class="l de">Obere GI-Endoskopie (Gastroskopie)</span><span class="l ru">Гастроскопия (ФГДС)</span><span class="l sk">Horná GI endoskopia (Gastroskopia)</span></div>
     
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
-</div>
-<div class="section-hdr dark"><span class="l en">Pain Management</span><span class="l de">Schmerztherapie</span><span class="l ru">Управление Болью</span><span class="l ar">إدارة الألم</span></div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Chronic Pain Consultation</span><span class="l de">Chronische Schmerz-Beratung</span><span class="l ru">Консультация по Хронической Боли</span><span class="l ar">استشارة الألم المزمن</span></div>
-    <div class="item-desc"><span class="l en">Diagnostic assessment & management plan</span><span class="l de">Diagnostik & Behandlungsplan</span><span class="l ru">Диагностика & план лечения</span><span class="l ar">التقييم التشخيصي وخطة العلاج</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 50</div></div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Joint Injections</span><span class="l de">Gelenkinjektionen</span><span class="l ru">Инъекции в Суставы</span><span class="l ar">حقن المفاصل</span></div>
-    <div class="item-desc"><span class="l en">Targeted corticosteroid or hyaluronic acid</span><span class="l de">Gezielte Kortikosteroide oder Hyaluronsäure</span><span class="l ru">Целевые кортикостероиды или гиалуроновая кислота</span><span class="l ar">كورتيكوستيرويد أو حمض الهيالورونيك</span></div>
-  </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Nerve Blocks</span><span class="l de">Nervenblockaden</span><span class="l ru">Блокады Нервов</span><span class="l ar">حصار الأعصاب</span></div>
-    <div class="item-desc"><span class="l en">Minimally invasive pain procedure</span><span class="l de">Minimal-invasive Schmerzbehandlung</span><span class="l ru">Минимально инвазивная процедура</span><span class="l ar">إجراء الألم الأقل توغلاً</span></div>
-  </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Radiofrequency Ablation</span><span class="l de">Radiofrequenzablation</span><span class="l ru">Радиочастотная Абляция</span><span class="l ar">الترددات الراديوية</span></div>
-    <div class="item-desc"><span class="l en">Advanced interventional pain treatment</span><span class="l de">Fortgeschrittene interventionelle Schmerztherapie</span><span class="l ru">Расширенное интервенционное лечение боли</span><span class="l ar">علاج الألم التدخلي المتقدم</span></div>
-  </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
-</div>
-<div class="section-hdr gold"><span class="l en">Medical Nutrition</span><span class="l de">Medizinische Ernährung</span><span class="l ru">Медицинское Питание</span><span class="l ar">التغذية الطبية</span></div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Nutritional Assessment & Meal Plan</span><span class="l de">Ernährungsbeurteilung & Ernährungsplan</span><span class="l ru">Оценка Питания & План Питания</span><span class="l ar">تقييم التغذية وخطة الوجبات</span></div>
-    <div class="item-desc"><span class="l en">Body composition · metabolic testing · diet plan</span><span class="l de">Körperzusammensetzung · Stoffwechsel · Diätplan</span><span class="l ru">Состав тела · метаболическое тестирование · план диеты</span><span class="l ar">تكوين الجسم · اختبار الأيض · خطة الغذاء</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 50</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Personalized Nutrition Program</span><span class="l de">Personalisiertes Ernährungsprogramm</span><span class="l ru">Персонализированная Программа Питания</span><span class="l ar">برنامج التغذية الشخصي</span></div>
-    <div class="item-desc"><span class="l en">Custom meal planning + follow-up sessions</span><span class="l de">Individuelle Ernährungsplanung + Nachsorgegespräche</span><span class="l ru">Индивидуальный план питания + сессии наблюдения</span><span class="l ar">تخطيط الوجبات المخصص + جلسات المتابعة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 150</div><div class="price-note"><span class="l en">per month</span><span class="l de">pro Monat</span><span class="l ru">в месяц</span><span class="l ar">/ شهر</span></div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Weight Management Program</span><span class="l de">Gewichtsmanagement-Programm</span><span class="l ru">Программа Контроля Веса</span><span class="l ar">برنامج إدارة الوزن</span></div>
-    <div class="item-desc"><span class="l en">Assessment · behavioral support · weekly monitoring (4 visits)</span><span class="l de">Beurteilung · Verhaltensunterstützung · wöchentliches Monitoring (4 Besuche)</span><span class="l ru">Оценка · поддержка · еженедельный мониторинг (4 визита)</span><span class="l ar">التقييم · الدعم · المتابعة الأسبوعية (4 زيارات)</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 120</div><div class="price-note"><span class="l en">per month</span><span class="l de">pro Monat</span><span class="l ru">в месяц</span><span class="l ar">/ شهر</span></div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    <div class="item-name"><span class="l en">Lower GI Endoscopy (Colonoscopy)</span><span class="l de">Untere GI-Endoskopie (Koloskopie)</span><span class="l ru">Колоноскопия</span><span class="l sk">Dolná GI endoskopia (Kolonoskopia)</span></div>
     
   </div>
-  <div class="item-right"><div class="item-price">€ 15</div></div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
-<div class="section-hdr dark"><span class="l en">Orthopedic Surgery</span><span class="l de">Orthopädische Chirurgie</span><span class="l ru">Ортопедическая Хирургия</span><span class="l ar">جراحة العظام</span></div>
+<div class="section-hdr dark"><span class="l en">Pain Management</span><span class="l de">Schmerztherapie</span><span class="l ru">Управление Болью</span><span class="l sk">Manažment bolesti</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Orthopedic Consultation</span><span class="l de">Orthopädie-Beratung</span><span class="l ru">Ортопедическая Консультация</span><span class="l ar">استشارة العظام</span></div>
-    <div class="item-desc"><span class="l en">Diagnostic assessment & management plan</span><span class="l de">Diagnostik & Behandlungsplan</span><span class="l ru">Диагностика & план лечения</span><span class="l ar">التقييم التشخيصي وخطة العلاج</span></div>
+    <div class="item-name"><span class="l en">Chronic Pain Consultation</span><span class="l de">Chronische Schmerz-Beratung</span><span class="l ru">Консультация по Хронической Боли</span><span class="l sk">Konzultácia chronickej bolesti</span></div>
+    <div class="item-desc"><span class="l en">Diagnostic assessment & management plan</span><span class="l de">Diagnostik & Behandlungsplan</span><span class="l ru">Диагностика & план лечения</span><span class="l sk">Diagnostické vyšetrenie a liečebný plán</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 50</div></div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l ar">استشارة المتابعة</span></div>
+    <div class="item-name"><span class="l en">Joint Injections</span><span class="l de">Gelenkinjektionen</span><span class="l ru">Инъекции в Суставы</span><span class="l sk">Injekcie do kĺbov</span></div>
+    <div class="item-desc"><span class="l en">Targeted corticosteroid or hyaluronic acid</span><span class="l de">Gezielte Kortikosteroide oder Hyaluronsäure</span><span class="l ru">Целевые кортикостероиды или гиалуроновая кислота</span><span class="l sk">Cielený kortikosteroid alebo kyselina hyalurónová</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Nerve Blocks</span><span class="l de">Nervenblockaden</span><span class="l ru">Блокады Нервов</span><span class="l sk">Nervové blokády</span></div>
+    <div class="item-desc"><span class="l en">Minimally invasive pain procedure</span><span class="l de">Minimal-invasive Schmerzbehandlung</span><span class="l ru">Минимально инвазивная процедура</span><span class="l sk">Minimálne invazívny zákrok proti bolesti</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Radiofrequency Ablation</span><span class="l de">Radiofrequenzablation</span><span class="l ru">Радиочастотная Абляция</span><span class="l sk">Rádiofrekvenčná ablácia</span></div>
+    <div class="item-desc"><span class="l en">Advanced interventional pain treatment</span><span class="l de">Fortgeschrittene interventionelle Schmerztherapie</span><span class="l ru">Расширенное интервенционное лечение боли</span><span class="l sk">Pokročilá intervenčná liečba bolesti</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Medical Nutrition</span><span class="l de">Medizinische Ernährung</span><span class="l ru">Медицинское Питание</span><span class="l sk">Zdravotná výživa</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Nutritional Assessment & Meal Plan</span><span class="l de">Ernährungsbeurteilung & Ernährungsplan</span><span class="l ru">Оценка Питания & План Питания</span><span class="l sk">Výživové vyšetrenie a jedálniček</span></div>
+    <div class="item-desc"><span class="l en">Body composition · metabolic testing · diet plan</span><span class="l de">Körperzusammensetzung · Stoffwechsel · Diätplan</span><span class="l ru">Состав тела · метаболическое тестирование · план диеты</span><span class="l sk">Zloženie tela · metabolický test · diétny plán</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Personalized Nutrition Program</span><span class="l de">Personalisiertes Ernährungsprogramm</span><span class="l ru">Персонализированная Программа Питания</span><span class="l sk">Personalizovaný výživový program</span></div>
+    <div class="item-desc"><span class="l en">Custom meal planning + follow-up sessions</span><span class="l de">Individuelle Ernährungsplanung + Nachsorgegespräche</span><span class="l ru">Индивидуальный план питания + сессии наблюдения</span><span class="l sk">Individuálne plánovanie jedál + kontrolné sedenia</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 165</div><div class="price-note"><span class="l en">per month</span><span class="l de">pro Monat</span><span class="l ru">в месяц</span><span class="l sk">mesačne</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Weight Management Program</span><span class="l de">Gewichtsmanagement-Programm</span><span class="l ru">Программа Контроля Веса</span><span class="l sk">Program na reguláciu hmotnosti</span></div>
+    <div class="item-desc"><span class="l en">Assessment · behavioral support · weekly monitoring (4 visits)</span><span class="l de">Beurteilung · Verhaltensunterstützung · wöchentliches Monitoring (4 Besuche)</span><span class="l ru">Оценка · поддержка · еженедельный мониторинг (4 визита)</span><span class="l sk">Vyšetrenie · behaviorálna podpora · týždenné sledovanie (4 návštevy)</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 135</div><div class="price-note"><span class="l en">per month</span><span class="l de">pro Monat</span><span class="l ru">в месяц</span><span class="l sk">mesačne</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l sk">Kontrolná konzultácia</span></div>
     
   </div>
-  <div class="item-right"><div class="item-price">€ 25</div></div>
+  <div class="item-right"><div class="item-price">€ 17</div></div>
 </div>
-<div class="section-hdr gold"><span class="l en">Body Plastic Surgery</span><span class="l de">Körper-Plastische Chirurgie</span><span class="l ru">Пластическая Хирургия Тела</span><span class="l ar">جراحة تجميل الجسم</span></div>
+<div class="section-hdr dark"><span class="l en">Orthopedic Surgery</span><span class="l de">Orthopädische Chirurgie</span><span class="l ru">Ортопедическая Хирургия</span><span class="l sk">Ortopedická chirurgia</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Liposuction</span><span class="l de">Liposuktion</span><span class="l ru">Липосакция</span><span class="l ar">شفط الدهون</span></div>
-    <div class="item-desc"><span class="l en">VASER · laser · high-definition contouring</span><span class="l de">VASER · Laser · High-Definition-Konturierung</span><span class="l ru">VASER · лазерная · высокоточное контурирование</span><span class="l ar">VASER · ليزر · تشكيل عالي الدقة</span></div>
+    <div class="item-name"><span class="l en">Orthopedic Consultation</span><span class="l de">Orthopädie-Beratung</span><span class="l ru">Ортопедическая Консультация</span><span class="l sk">Ortopedická konzultácia</span></div>
+    <div class="item-desc"><span class="l en">Diagnostic assessment & management plan</span><span class="l de">Diagnostik & Behandlungsplan</span><span class="l ru">Диагностика & план лечения</span><span class="l sk">Diagnostické vyšetrenie a liečebný plán</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Tummy Tuck</span><span class="l de">Bauchdeckenstraffung</span><span class="l ru">Абдоминопластика</span><span class="l ar">شد البطن</span></div>
-    <div class="item-desc"><span class="l en">Full · mini · extended abdominoplasty</span><span class="l de">Voll · Mini · Erweiterte Abdominoplastik</span><span class="l ru">Полная · мини · расширенная</span><span class="l ar">كامل · ميني · مد البطن</span></div>
-  </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Breast Procedures</span><span class="l de">Brustoperationen</span><span class="l ru">Операции на Груди</span><span class="l ar">عمليات الثدي</span></div>
-    <div class="item-desc"><span class="l en">Augmentation · lift · reduction · implant revision</span><span class="l de">Augmentation · Lifting · Reduktion · Implantatrevision</span><span class="l ru">Увеличение · подтяжка · уменьшение · ревизия</span><span class="l ar">تكبير · رفع · تصغير · مراجعة الغرسات</span></div>
+    <div class="item-name"><span class="l en">Follow-up Consultation</span><span class="l de">Kontrollberatung</span><span class="l ru">Повторная Консультация</span><span class="l sk">Kontrolná konzultácia</span></div>
+    
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 27</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Body Plastic Surgery</span><span class="l de">Körper-Plastische Chirurgie</span><span class="l ru">Пластическая Хирургия Тела</span><span class="l sk">Plastická chirurgia tela</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Liposuction</span><span class="l de">Liposuktion</span><span class="l ru">Липосакция</span><span class="l sk">Liposukcia</span></div>
+    <div class="item-desc"><span class="l en">VASER · laser · high-definition contouring</span><span class="l de">VASER · Laser · High-Definition-Konturierung</span><span class="l ru">VASER · лазерная · высокоточное контурирование</span><span class="l sk">VASER · laser · vysoko presné modelovanie</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Brazilian Butt Lift (BBL)</span><span class="l de">Brazilian Butt Lift (BBL)</span><span class="l ru">Бразильская Подтяжка Ягодиц (BBL)</span><span class="l ar">البرازيلي (BBL)</span></div>
-    <div class="item-desc"><span class="l en">Fat transfer body contouring</span><span class="l de">Fetttransfer Körperkonturierung</span><span class="l ru">Контурирование тела с пересадкой жира</span><span class="l ar">تشكيل الجسم بنقل الدهون</span></div>
+    <div class="item-name"><span class="l en">Tummy Tuck</span><span class="l de">Bauchdeckenstraffung</span><span class="l ru">Абдоминопластика</span><span class="l sk">Abdominoplastika</span></div>
+    <div class="item-desc"><span class="l en">Full · mini · extended abdominoplasty</span><span class="l de">Voll · Mini · Erweiterte Abdominoplastik</span><span class="l ru">Полная · мини · расширенная</span><span class="l sk">Kompletná · mini · rozšírená abdominoplastika</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Arm Lift / Thigh Lift</span><span class="l de">Armstraffung / Oberschenkelstraffung</span><span class="l ru">Брахиопластика / Подтяжка Бёдер</span><span class="l ar">شد الذراعين / الفخذين</span></div>
-    <div class="item-desc"><span class="l en">Body contouring after weight loss</span><span class="l de">Körperkonturierung nach Gewichtsverlust</span><span class="l ru">Контурирование тела после похудения</span><span class="l ar">تشكيل الجسم بعد فقدان الوزن</span></div>
+    <div class="item-name"><span class="l en">Breast Procedures</span><span class="l de">Brustoperationen</span><span class="l ru">Операции на Груди</span><span class="l sk">Zákroky na prsiach</span></div>
+    <div class="item-desc"><span class="l en">Augmentation · lift · reduction · implant revision</span><span class="l de">Augmentation · Lifting · Reduktion · Implantatrevision</span><span class="l ru">Увеличение · подтяжка · уменьшение · ревизия</span><span class="l sk">Zväčšenie · lifting · zmenšenie · revízia implantátov</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Intimate Procedures</span><span class="l de">Intime Eingriffe</span><span class="l ru">Интимные Процедуры</span><span class="l ar">الإجراءات الحميمة</span></div>
-    <div class="item-desc"><span class="l en">Personalized surgical refinement</span><span class="l de">Personalisierte chirurgische Verfeinerung</span><span class="l ru">Персонализированная хирургическая коррекция</span><span class="l ar">تحسين جراحي شخصي</span></div>
+    <div class="item-name"><span class="l en">Brazilian Butt Lift (BBL)</span><span class="l de">Brazilian Butt Lift (BBL)</span><span class="l ru">Бразильская Подтяжка Ягодиц (BBL)</span><span class="l sk">Brazílsky lifting zadku (BBL)</span></div>
+    <div class="item-desc"><span class="l en">Fat transfer body contouring</span><span class="l de">Fetttransfer Körperkonturierung</span><span class="l ru">Контурирование тела с пересадкой жира</span><span class="l sk">Modelovanie tela prenosom tuku</span></div>
   </div>
-  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l ar">عند الطلب</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l ar">يلزم الاستشارة</span></div></div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Arm Lift / Thigh Lift</span><span class="l de">Armstraffung / Oberschenkelstraffung</span><span class="l ru">Брахиопластика / Подтяжка Бёдер</span><span class="l sk">Lifting ramien / stehien</span></div>
+    <div class="item-desc"><span class="l en">Body contouring after weight loss</span><span class="l de">Körperkonturierung nach Gewichtsverlust</span><span class="l ru">Контурирование тела после похудения</span><span class="l sk">Modelovanie tela po chudnutí</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Intimate Procedures</span><span class="l de">Intime Eingriffe</span><span class="l ru">Интимные Процедуры</span><span class="l sk">Intímne zákroky</span></div>
+    <div class="item-desc"><span class="l en">Personalized surgical refinement</span><span class="l de">Personalisierte chirurgische Verfeinerung</span><span class="l ru">Персонализированная хирургическая коррекция</span><span class="l sk">Individuálna chirurgická úprava</span></div>
+  </div>
+  <div class="item-right"><div class="price-req"><span class="l en">On request</span><span class="l de">Auf Anfrage</span><span class="l ru">По запросу</span><span class="l sk">Na vyžiadanie</span></div><div class="price-note"><span class="l en">consultation required</span><span class="l de">Beratung erforderlich</span><span class="l ru">требуется консультация</span><span class="l sk">vyžaduje konzultáciu</span></div></div>
 </div>
 
 
@@ -540,182 +541,186 @@ body.lang-ar .l.ar{display:inline}
     <div class="header-brand">RaVida</div>
     <div class="header-sub">Medical &amp; Holistic Clinic</div>
     <div class="header-rule"></div>
-    <div class="header-cat"><span class="l en">Physio & Recovery</span><span class="l de">Physiotherapie & Erholung</span><span class="l ru">Физиотерапия и Восстановление</span><span class="l ar">العلاج الطبيعي والتعافي</span></div>
-    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+    <div class="header-cat"><span class="l en">Physio & Recovery</span><span class="l de">Physiotherapie & Erholung</span><span class="l ru">Физиотерапия и Восстановление</span><span class="l sk">Fyzioterapia a regenerácia</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l sk">Cenník · Hurghada · 2026</span></div>
   </div>
 </div>
 <div class="banner">
-  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
-  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
-  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
-  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l sk">Poplatok za konzultáciu: €10 — započítaný do ceny ošetrenia pri rezervácii</span> ★</div>
 </div>
-<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · السعر النهائي بعد الاستشارة الشخصية</span></div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l sk">Všetky ceny v EUR (€) · Konečná cena po osobnej konzultácii</span></div>
 <div class="content">
-<div class="section-hdr dark"><span class="l en">Manual Therapy & Rehabilitation</span><span class="l de">Manuelle Therapie & Rehabilitation</span><span class="l ru">Мануальная Терапия и Реабилитация</span><span class="l ar">العلاج اليدوي والتأهيل</span></div>
+<div class="section-hdr dark"><span class="l en">Manual Therapy & Rehabilitation</span><span class="l de">Manuelle Therapie & Rehabilitation</span><span class="l ru">Мануальная Терапия и Реабилитация</span><span class="l sk">Manuálna terapia a rehabilitácia</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Initial Physiotherapy Assessment</span><span class="l de">Erstbeurteilung Physiotherapie</span><span class="l ru">Первичная Физиотерапевтическая Оценка</span><span class="l ar">تقييم العلاج الطبيعي الأولي</span></div>
-    <div class="item-desc"><span class="l en">Full diagnostic evaluation</span><span class="l de">Vollständige Diagnostik</span><span class="l ru">Полная диагностическая консультация</span><span class="l ar">تقييم تشخيصي كامل</span></div>
+    <div class="item-name"><span class="l en">Initial Physiotherapy Assessment</span><span class="l de">Erstbeurteilung Physiotherapie</span><span class="l ru">Первичная Физиотерапевтическая Оценка</span><span class="l sk">Vstupné fyzioterapeutické vyšetrenie</span></div>
+    <div class="item-desc"><span class="l en">Full diagnostic evaluation</span><span class="l de">Vollständige Diagnostik</span><span class="l ru">Полная диагностическая консультация</span><span class="l sk">Kompletné diagnostické vyšetrenie</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 10</div></div>
+  <div class="item-right"><div class="item-price">€ 11</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Manual Therapy Session</span><span class="l de">Manuelle Therapie Sitzung</span><span class="l ru">Сеанс Мануальной Терапии</span><span class="l ar">جلسة العلاج اليدوي</span></div>
-    <div class="item-desc"><span class="l en">60 min hands-on treatment</span><span class="l de">60 Min. Behandlung</span><span class="l ru">60 мин. практическое лечение</span><span class="l ar">60 دقيقة علاج يدوي</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 50</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Deep Tissue / Myofascial Release</span><span class="l de">Tiefengewebe / Myofasziales Release</span><span class="l ru">Глубокий Тканевый / Миофасциальный Релиз</span><span class="l ar">الأنسجة العميقة / الإفراج اللفافي</span></div>
-    <div class="item-desc"><span class="l en">Targeted muscle & fascia therapy</span><span class="l de">Gezielte Muskel- & Faszientherapie</span><span class="l ru">Терапия мышц & фасций</span><span class="l ar">علاج العضلات واللفافة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 40</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Joint Mobilization & Manipulation</span><span class="l de">Gelenkmobilisation & Manipulation</span><span class="l ru">Мобилизация & Манипуляция Суставов</span><span class="l ar">تعبئة المفاصل</span></div>
-    <div class="item-desc"><span class="l en">Advanced physiotherapy technique</span><span class="l de">Fortgeschrittene Physiotherapietechnik</span><span class="l ru">Продвинутая физиотерапевтическая техника</span><span class="l ar">تقنية العلاج الطبيعي المتقدمة</span></div>
+    <div class="item-name"><span class="l en">Manual Therapy Session</span><span class="l de">Manuelle Therapie Sitzung</span><span class="l ru">Сеанс Мануальной Терапии</span><span class="l sk">Sedenie manuálnej terapie</span></div>
+    <div class="item-desc"><span class="l en">60 min hands-on treatment</span><span class="l de">60 Min. Behandlung</span><span class="l ru">60 мин. практическое лечение</span><span class="l sk">60 min. ošetrenie rukami</span></div>
   </div>
   <div class="item-right"><div class="item-price">€ 55</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Orthopedic Rehabilitation</span><span class="l de">Orthopädische Rehabilitation</span><span class="l ru">Ортопедическая Реабилитация</span><span class="l ar">التأهيل العظمي</span></div>
-    <div class="item-desc"><span class="l en">Post-surgery · fracture · ligament recovery</span><span class="l de">Post-OP · Fraktur · Bänderreha</span><span class="l ru">После операции · переломы · связки</span><span class="l ar">ما بعد الجراحة · الكسور · الأربطة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 55</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Neurological Physiotherapy</span><span class="l de">Neurologische Physiotherapie</span><span class="l ru">Неврологическая Физиотерапия</span><span class="l ar">العلاج الطبيعي العصبي</span></div>
-    <div class="item-desc"><span class="l en">Stroke · balance · coordination rehab</span><span class="l de">Schlaganfall · Balance · Koordination</span><span class="l ru">Инсульт · баланс · координация</span><span class="l ar">السكتة الدماغية · التوازن · التنسيق</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 60</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Pelvic Floor Physiotherapy</span><span class="l de">Beckenboden-Physiotherapie</span><span class="l ru">Физиотерапия Тазового Дна</span><span class="l ar">علاج طبيعي لقاع الحوض</span></div>
-    <div class="item-desc"><span class="l en">Postpartum · bladder control · core rehab</span><span class="l de">Postpartum · Blasenkontrolle · Core</span><span class="l ru">После родов · контроль мочевого пузыря · кор</span><span class="l ar">ما بعد الولادة · التحكم في المثانة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 55</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Geriatric Physiotherapy</span><span class="l de">Geriatrische Physiotherapie</span><span class="l ru">Гериатрическая Физиотерапия</span><span class="l ar">العلاج الطبيعي للمسنين</span></div>
-    <div class="item-desc"><span class="l en">Fall prevention · mobility · independence</span><span class="l de">Sturzprävention · Mobilität · Selbstständigkeit</span><span class="l ru">Профилактика падений · подвижность</span><span class="l ar">الوقاية من السقوط · الحركة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 50</div></div>
-</div>
-<div class="section-hdr gold"><span class="l en">Sports Recovery — Massage</span><span class="l de">Sportliche Erholung — Massage</span><span class="l ru">Спортивное Восстановление — Массаж</span><span class="l ar">التعافي الرياضي — التدليك</span></div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Sports Massage — 30 min</span><span class="l de">Sportmassage — 30 Min.</span><span class="l ru">Спортивный Массаж — 30 Мин.</span><span class="l ar">التدليك الرياضي — 30 دقيقة</span></div>
-    <div class="item-desc"><span class="l en">Pre & post-event · maintenance · injury prevention</span><span class="l de">Vor & nach Wettkampf · Wartung · Verletzungsprävention</span><span class="l ru">До/после соревнований · поддержание · профилактика</span><span class="l ar">قبل وبعد المسابقة · الصيانة · الوقاية</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 35</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Sports Massage — 60 min</span><span class="l de">Sportmassage — 60 Min.</span><span class="l ru">Спортивный Массаж — 60 Мин.</span><span class="l ar">التدليك الرياضي — 60 دقيقة</span></div>
-    
-  </div>
-  <div class="item-right"><div class="item-price">€ 60</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Sports Massage — 90 min</span><span class="l de">Sportmassage — 90 Min.</span><span class="l ru">Спортивный Массаж — 90 Мин.</span><span class="l ar">التدليك الرياضي — 90 دقيقة</span></div>
-    
-  </div>
-  <div class="item-right"><div class="item-price">€ 85</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Gun Massage Therapy — 15 min</span><span class="l de">Massagepistole — 15 Min.</span><span class="l ru">Массаж Пушкой — 15 Мин.</span><span class="l ar">مساج المسدس — 15 دقيقة</span></div>
-    <div class="item-desc"><span class="l en">Deep percussion therapy</span><span class="l de">Tiefe Perkussionstherapie</span><span class="l ru">Глубокая перкуссионная терапия</span><span class="l ar">العلاج بالإيقاع العميق</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 10</div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">Lymphatic Drainage — 30 min</span><span class="l de">Lymphdrainage — 30 Min.</span><span class="l ru">Лимфодренажный Массаж — 30 Мин.</span><span class="l ar">الصرف اللمفاوي — 30 دقيقة</span></div>
-    <div class="item-desc"><span class="l en">Detox · swelling reduction · post-surgical</span><span class="l de">Detox · Entstauung · Post-OP</span><span class="l ru">Детокс · уменьшение отёков · после операции</span><span class="l ar">تطهير · تقليل التورم · ما بعد الجراحة</span></div>
+    <div class="item-name"><span class="l en">Deep Tissue / Myofascial Release</span><span class="l de">Tiefengewebe / Myofasziales Release</span><span class="l ru">Глубокий Тканевый / Миофасциальный Релиз</span><span class="l sk">Hlboké tkanivo / myofasciálne uvoľnenie</span></div>
+    <div class="item-desc"><span class="l en">Targeted muscle & fascia therapy</span><span class="l de">Gezielte Muskel- & Faszientherapie</span><span class="l ru">Терапия мышц & фасций</span><span class="l sk">Cielená terapia svalov a fascií</span></div>
   </div>
   <div class="item-right"><div class="item-price">€ 45</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Lymphatic Drainage — 60 min</span><span class="l de">Lymphdrainage — 60 Min.</span><span class="l ru">Лимфодренажный Массаж — 60 Мин.</span><span class="l ar">الصرف اللمفاوي — 60 دقيقة</span></div>
-    
+    <div class="item-name"><span class="l en">Joint Mobilization & Manipulation</span><span class="l de">Gelenkmobilisation & Manipulation</span><span class="l ru">Мобилизация & Манипуляция Суставов</span><span class="l sk">Mobilizácia a manipulácia kĺbov</span></div>
+    <div class="item-desc"><span class="l en">Advanced physiotherapy technique</span><span class="l de">Fortgeschrittene Physiotherapietechnik</span><span class="l ru">Продвинутая физиотерапевтическая техника</span><span class="l sk">Pokročilá fyzioterapeutická technika</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 70</div></div>
+  <div class="item-right"><div class="item-price">€ 59</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Lymphatic Drainage — 90 min</span><span class="l de">Lymphdrainage — 90 Min.</span><span class="l ru">Лимфодренажный Массаж — 90 Мин.</span><span class="l ar">الصرف اللمفاوي — 90 دقيقة</span></div>
+    <div class="item-name"><span class="l en">Orthopedic Rehabilitation</span><span class="l de">Orthopädische Rehabilitation</span><span class="l ru">Ортопедическая Реабилитация</span><span class="l sk">Ortopedická rehabilitácia</span></div>
+    <div class="item-desc"><span class="l en">Post-surgery · fracture · ligament recovery</span><span class="l de">Post-OP · Fraktur · Bänderreha</span><span class="l ru">После операции · переломы · связки</span><span class="l sk">Po operácii · zlomeniny · rekonvalescencia väzov</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 59</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Neurological Physiotherapy</span><span class="l de">Neurologische Physiotherapie</span><span class="l ru">Неврологическая Физиотерапия</span><span class="l sk">Neurologická fyzioterapia</span></div>
+    <div class="item-desc"><span class="l en">Stroke · balance · coordination rehab</span><span class="l de">Schlaganfall · Balance · Koordination</span><span class="l ru">Инсульт · баланс · координация</span><span class="l sk">Mŕtvica · rovnováha · rehabilitácia koordinácie</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 65</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Pelvic Floor Physiotherapy</span><span class="l de">Beckenboden-Physiotherapie</span><span class="l ru">Физиотерапия Тазового Дна</span><span class="l sk">Fyzioterapia panvového dna</span></div>
+    <div class="item-desc"><span class="l en">Postpartum · bladder control · core rehab</span><span class="l de">Postpartum · Blasenkontrolle · Core</span><span class="l ru">После родов · контроль мочевого пузыря · кор</span><span class="l sk">Po pôrode · kontrola močového mechúra · rehabilitácia stredu tela</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 59</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Geriatric Physiotherapy</span><span class="l de">Geriatrische Physiotherapie</span><span class="l ru">Гериатрическая Физиотерапия</span><span class="l sk">Geriatrická fyzioterapia</span></div>
+    <div class="item-desc"><span class="l en">Fall prevention · mobility · independence</span><span class="l de">Sturzprävention · Mobilität · Selbstständigkeit</span><span class="l ru">Профилактика падений · подвижность</span><span class="l sk">Prevencia pádov · mobilita · sebestačnosť</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 55</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Guided Exercise Session — 30 min</span><span class="l de">Angeleitete Übungseinheit — 30 Min.</span><span class="l ru">Занятие с Инструктором — 30 Мин.</span><span class="l sk">Cvičenie pod vedením — 30 min</span></div>
+    <div class="item-desc"><span class="l en">Supervised therapeutic exercises with physiotherapist</span><span class="l de">Betreute Therapieübungen mit Physiotherapeut</span><span class="l ru">Терапевтические упражнения под наблюдением физиотерапевта</span><span class="l sk">Terapeutické cvičenia pod dohľadom fyzioterapeuta</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 20</div></div>
+</div>
+<div class="section-hdr gold"><span class="l en">Sports Recovery — Massage</span><span class="l de">Sportliche Erholung — Massage</span><span class="l ru">Спортивное Восстановление — Массаж</span><span class="l sk">Športová regenerácia — masáž</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Sports Massage — 30 min</span><span class="l de">Sportmassage — 30 Min.</span><span class="l ru">Спортивный Массаж — 30 Мин.</span><span class="l sk">Športová masáž — 30 min</span></div>
+    <div class="item-desc"><span class="l en">Pre & post-event · maintenance · injury prevention</span><span class="l de">Vor & nach Wettkampf · Wartung · Verletzungsprävention</span><span class="l ru">До/после соревнований · поддержание · профилактика</span><span class="l sk">Pred a po podujatí · údržba · prevencia zranení</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 39</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Sports Massage — 60 min</span><span class="l de">Sportmassage — 60 Min.</span><span class="l ru">Спортивный Массаж — 60 Мин.</span><span class="l sk">Športová masáž — 60 min</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 65</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Sports Massage — 90 min</span><span class="l de">Sportmassage — 90 Min.</span><span class="l ru">Спортивный Массаж — 90 Мин.</span><span class="l sk">Športová masáž — 90 min</span></div>
     
   </div>
   <div class="item-right"><div class="item-price">€ 95</div></div>
 </div>
-<div class="section-hdr dark"><span class="l en">Electro & Device Therapy</span><span class="l de">Elektro- & Gerätetherapie</span><span class="l ru">Электро и Аппаратная Терапия</span><span class="l ar">العلاج الكهربائي والجهازي</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">TENS Therapy</span><span class="l de">TENS-Therapie</span><span class="l ru">TENS-Терапия</span><span class="l ar">علاج TENS</span></div>
-    <div class="item-desc"><span class="l en">Pain reduction & muscle activation</span><span class="l de">Schmerzreduktion & Muskelaktivierung</span><span class="l ru">Снижение боли & стимуляция мышц</span><span class="l ar">تخفيف الألم وتنشيط العضلات</span></div>
+    <div class="item-name"><span class="l en">Gun Massage Therapy — 15 min</span><span class="l de">Massagepistole — 15 Min.</span><span class="l ru">Массаж Пушкой — 15 Мин.</span><span class="l sk">Masáž masážnou pištoľou — 15 min</span></div>
+    <div class="item-desc"><span class="l en">Deep percussion therapy</span><span class="l de">Tiefe Perkussionstherapie</span><span class="l ru">Глубокая перкуссионная терапия</span><span class="l sk">Hĺbková perkusná terapia</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 25</div></div>
+  <div class="item-right"><div class="item-price">€ 10</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Ultrasound Therapy</span><span class="l de">Ultraschalltherapie</span><span class="l ru">УЗ-Терапия</span><span class="l ar">العلاج بالموجات فوق الصوتية</span></div>
-    <div class="item-desc"><span class="l en">Deep tissue healing</span><span class="l de">Tiefe Gewebeheilung</span><span class="l ru">Глубокое заживление тканей</span><span class="l ar">التئام الأنسجة العميقة</span></div>
+    <div class="item-name"><span class="l en">Lymphatic Drainage — 30 min</span><span class="l de">Lymphdrainage — 30 Min.</span><span class="l ru">Лимфодренажный Массаж — 30 Мин.</span><span class="l sk">Lymfatická drenáž — 30 min</span></div>
+    <div class="item-desc"><span class="l en">Detox · swelling reduction · post-surgical</span><span class="l de">Detox · Entstauung · Post-OP</span><span class="l ru">Детокс · уменьшение отёков · после операции</span><span class="l sk">Detox · zníženie opuchov · po operácii</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 25</div></div>
+  <div class="item-right"><div class="item-price">€ 49</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Red Light Therapy</span><span class="l de">Rotlichttherapie</span><span class="l ru">Красная Светотерапия</span><span class="l ar">العلاج بالضوء الأحمر</span></div>
-    <div class="item-desc"><span class="l en">Inflammation reduction & recovery support</span><span class="l de">Entzündungshemmung & Erholungsunterstützung</span><span class="l ru">Уменьшение воспаления & восстановление</span><span class="l ar">تقليل الالتهاب ودعم التعافي</span></div>
+    <div class="item-name"><span class="l en">Lymphatic Drainage — 60 min</span><span class="l de">Lymphdrainage — 60 Min.</span><span class="l ru">Лимфодренажный Массаж — 60 Мин.</span><span class="l sk">Lymfatická drenáž — 60 min</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 79</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Lymphatic Drainage — 90 min</span><span class="l de">Lymphdrainage — 90 Min.</span><span class="l ru">Лимфодренажный Массаж — 90 Мин.</span><span class="l sk">Lymfatická drenáž — 90 min</span></div>
+    
+  </div>
+  <div class="item-right"><div class="item-price">€ 105</div></div>
+</div>
+<div class="section-hdr dark"><span class="l en">Electro & Device Therapy</span><span class="l de">Elektro- & Gerätetherapie</span><span class="l ru">Электро и Аппаратная Терапия</span><span class="l sk">Elektro- a prístrojová terapia</span></div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">TENS Therapy</span><span class="l de">TENS-Therapie</span><span class="l ru">TENS-Терапия</span><span class="l sk">TENS terapia</span></div>
+    <div class="item-desc"><span class="l en">Pain reduction & muscle activation</span><span class="l de">Schmerzreduktion & Muskelaktivierung</span><span class="l ru">Снижение боли & стимуляция мышц</span><span class="l sk">Zníženie bolesti a aktivácia svalov</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 29</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Ultrasound Therapy</span><span class="l de">Ultraschalltherapie</span><span class="l ru">УЗ-Терапия</span><span class="l sk">Ultrazvuková terapia</span></div>
+    <div class="item-desc"><span class="l en">Deep tissue healing</span><span class="l de">Tiefe Gewebeheilung</span><span class="l ru">Глубокое заживление тканей</span><span class="l sk">Hojenie hlbokého tkaniva</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 29</div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">Red Light Therapy</span><span class="l de">Rotlichttherapie</span><span class="l ru">Красная Светотерапия</span><span class="l sk">Terapia červeným svetlom</span></div>
+    <div class="item-desc"><span class="l en">Inflammation reduction & recovery support</span><span class="l de">Entzündungshemmung & Erholungsunterstützung</span><span class="l ru">Уменьшение воспаления & восстановление</span><span class="l sk">Zníženie zápalu a podpora regenerácie</span></div>
   </div>
   <div class="item-right"><div class="item-price">€ 15</div></div>
 </div>
-<div class="section-hdr gold"><span class="l en">Specialized Therapies</span><span class="l de">Spezialtherapien</span><span class="l ru">Специализированные Процедуры</span><span class="l ar">علاجات متخصصة</span></div>
+<div class="section-hdr gold"><span class="l en">Specialized Therapies</span><span class="l de">Spezialtherapien</span><span class="l ru">Специализированные Процедуры</span><span class="l sk">Špecializované terapie</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Dry Cupping Therapy</span><span class="l de">Trockenschröpfen</span><span class="l ru">Сухое Баночное Массирование</span><span class="l ar">الحجامة الجافة</span></div>
-    <div class="item-desc"><span class="l en">Traditional tension release & circulation</span><span class="l de">Traditionelle Entspannung & Durchblutung</span><span class="l ru">Традиционное снятие напряжения & кровообращение</span><span class="l ar">تحرير التوتر التقليدي والدورة الدموية</span></div>
+    <div class="item-name"><span class="l en">Dry Cupping Therapy</span><span class="l de">Trockenschröpfen</span><span class="l ru">Сухое Баночное Массирование</span><span class="l sk">Suché banecovanie</span></div>
+    <div class="item-desc"><span class="l en">Traditional tension release & circulation</span><span class="l de">Traditionelle Entspannung & Durchblutung</span><span class="l ru">Традиционное снятие напряжения & кровообращение</span><span class="l sk">Tradičné uvoľnenie napätia a podpora krvného obehu</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 35</div></div>
+  <div class="item-right"><div class="item-price">€ 39</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Wet Cupping (Hijama)</span><span class="l de">Nasses Schröpfen (Hijama)</span><span class="l ru">Влажное Баночное (Хиджама)</span><span class="l ar">الحجامة الرطبة</span></div>
-    <div class="item-desc"><span class="l en">Traditional detox & deep tissue therapy</span><span class="l de">Traditioneller Detox & Tiefengewebetherapie</span><span class="l ru">Традиционный детокс & глубокая терапия</span><span class="l ar">إزالة السموم التقليدية والعلاج العميق</span></div>
+    <div class="item-name"><span class="l en">Wet Cupping (Hijama)</span><span class="l de">Nasses Schröpfen (Hijama)</span><span class="l ru">Влажное Баночное (Хиджама)</span><span class="l sk">Mokré banecovanie (Hidžama)</span></div>
+    <div class="item-desc"><span class="l en">Traditional detox & deep tissue therapy</span><span class="l de">Traditioneller Detox & Tiefengewebetherapie</span><span class="l ru">Традиционный детокс & глубокая терапия</span><span class="l sk">Tradičný detox a terapia hlbokého tkaniva</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 55</div></div>
+  <div class="item-right"><div class="item-price">€ 59</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">TCM Acupuncture</span><span class="l de">TCM Akupunktur</span><span class="l ru">ТКМ Иглоукалывание</span><span class="l ar">الوخز بالإبر الصيني</span></div>
-    <div class="item-desc"><span class="l en">Pain · stress · fertility · digestive health</span><span class="l de">Schmerz · Stress · Fertilität · Verdauung</span><span class="l ru">Боль · стресс · фертильность · пищеварение</span><span class="l ar">الألم · الضغط · الخصوبة · الهضم</span></div>
+    <div class="item-name"><span class="l en">TCM Acupuncture</span><span class="l de">TCM Akupunktur</span><span class="l ru">ТКМ Иглоукалывание</span><span class="l sk">Akupunktúra TČM</span></div>
+    <div class="item-desc"><span class="l en">Pain · stress · fertility · digestive health</span><span class="l de">Schmerz · Stress · Fertilität · Verdauung</span><span class="l ru">Боль · стресс · фертильность · пищеварение</span><span class="l sk">Bolesť · stres · plodnosť · trávenie</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 55</div></div>
+  <div class="item-right"><div class="item-price">€ 59</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Zero Gravity Massage Chair — 30 min</span><span class="l de">Zero-Gravity-Massagestuhl — 30 Min.</span><span class="l ru">Кресло Zero Gravity — 30 Мин.</span><span class="l ar">كرسي Zero Gravity — 30 دقيقة</span></div>
-    <div class="item-desc"><span class="l en">Full body relaxation incl. refreshment juice</span><span class="l de">Ganzkörperentspannung inkl. Erfrischungsgetränk</span><span class="l ru">Полное расслабление тела + сок в подарок</span><span class="l ar">استرخاء كامل للجسم + عصير</span></div>
+    <div class="item-name"><span class="l en">Zero Gravity Massage Chair — 30 min</span><span class="l de">Zero-Gravity-Massagestuhl — 30 Min.</span><span class="l ru">Кресло Zero Gravity — 30 Мин.</span><span class="l sk">Masážne kreslo Zero Gravity — 30 min</span></div>
+    <div class="item-desc"><span class="l en">Full body relaxation incl. refreshment juice</span><span class="l de">Ganzkörperentspannung inkl. Erfrischungsgetränk</span><span class="l ru">Полное расслабление тела + сок в подарок</span><span class="l sk">Relaxácia celého tela vrátane osviežujúceho džúsu</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 20</div></div>
+  <div class="item-right"><div class="item-price">€ 22</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Compression Therapy</span><span class="l de">Kompressionstherapie</span><span class="l ru">Компрессионная Терапия</span><span class="l ar">العلاج بالضغط</span></div>
-    <div class="item-desc"><span class="l en">Leg · arm · full body pneumatic recovery</span><span class="l de">Beine · Arme · Ganzkörper pneumatisch</span><span class="l ru">Ноги · руки · полное тело</span><span class="l ar">الساقين · الذراعين · الجسم كله</span></div>
+    <div class="item-name"><span class="l en">Compression Therapy</span><span class="l de">Kompressionstherapie</span><span class="l ru">Компрессионная Терапия</span><span class="l sk">Kompresná terapia</span></div>
+    <div class="item-desc"><span class="l en">Leg · arm · full body pneumatic recovery</span><span class="l de">Beine · Arme · Ganzkörper pneumatisch</span><span class="l ru">Ноги · руки · полное тело</span><span class="l sk">Nohy · ruky · celotelová pneumatická regenerácia</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 25</div></div>
+  <div class="item-right"><div class="item-price">€ 29</div></div>
 </div>
 
 
@@ -729,150 +734,147 @@ body.lang-ar .l.ar{display:inline}
     <div class="header-brand">RaVida</div>
     <div class="header-sub">Medical &amp; Holistic Clinic</div>
     <div class="header-rule"></div>
-    <div class="header-cat"><span class="l en">Wellness & Holistic</span><span class="l de">Wellness & Holistik</span><span class="l ru">Велнес и Холистика</span><span class="l ar">العافية والشمولية</span></div>
-    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l ar">دليل الأسعار · الغردقة · 2026</span></div>
+    <div class="header-cat"><span class="l en">Wellness & Holistic</span><span class="l de">Wellness & Holistik</span><span class="l ru">Велнес и Холистика</span><span class="l sk">Wellness a holistika</span></div>
+    <div class="header-cat-sub"><span class="l en">Price Guide · Hurghada · 2026</span><span class="l de">Preisliste · Hurghada · 2026</span><span class="l ru">Прайс-лист · Хургада · 2026</span><span class="l sk">Cenník · Hurghada · 2026</span></div>
   </div>
 </div>
 <div class="banner">
-  <div class="banner-title">★ <span class="l en">Grand Opening Offer</span><span class="l de">Eröffnungsangebot</span><span class="l ru">Предложение в честь открытия</span><span class="l ar">عرض الافتتاح الكبير</span> ★</div>
-  <div class="banner-sub"><span class="l en">All prices shown are already our special opening prices</span><span class="l de">Alle angezeigten Preise sind bereits unsere Eröffnungspreise</span><span class="l ru">Все указанные цены уже являются нашими специальными ценами открытия</span><span class="l ar">جميع الأسعار المعروضة هي أسعار الافتتاح الخاصة</span></div>
-  <div class="banner-note"><span class="l en">10% discount already included — valid from opening day · Cannot be combined with other offers</span><span class="l de">10% Rabatt bereits enthalten — gültig ab Eröffnungstag · Nicht mit anderen Angeboten kombinierbar</span><span class="l ru">Скидка 10% уже включена — действует с дня открытия · Не суммируется с другими акциями</span><span class="l ar">خصم 10٪ مدرج بالفعل — ساري من يوم الافتتاح · لا يمكن الجمع</span></div>
-  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l ar">رسوم الاستشارة: €10 — تُحتسب عند الحجز</span> ★</div>
+  <div class="consult-line">★ <span class="l en">Consultation fee: €10 — credited toward your treatment when booked</span><span class="l de">Beratungsgebühr: €10 — wird bei Buchung einer Behandlung angerechnet</span><span class="l ru">Стоимость консультации: €10 — засчитывается в счёт лечения при записи</span><span class="l sk">Poplatok za konzultáciu: €10 — započítaný do ceny ošetrenia pri rezervácii</span> ★</div>
 </div>
-<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l ar">جميع الأسعار بالـ EUR (€) · السعر النهائي بعد الاستشارة الشخصية</span></div>
+<div class="info-line"><span class="l en">All prices in EUR (€) · Final quote after personal consultation</span><span class="l de">Alle Preise in EUR (€) · Endpreis nach persönlicher Beratung</span><span class="l ru">Все цены в евро (€) · Окончательная цена после личной консультации</span><span class="l sk">Všetky ceny v EUR (€) · Konečná cena po osobnej konzultácii</span></div>
 <div class="content">
-<div class="section-hdr dark"><span class="l en">IV Therapy — Signature Drip Collection</span><span class="l de">IV-Therapie — Signature Drip Kollektion</span><span class="l ru">IV-Терапия — Коллекция Signature Drip</span><span class="l ar">العلاج الوريدي — مجموعة القطرات الحصرية</span></div>
+<div class="section-hdr dark"><span class="l en">IV Therapy — Signature Drip Collection</span><span class="l de">IV-Therapie — Signature Drip Kollektion</span><span class="l ru">IV-Терапия — Коллекция Signature Drip</span><span class="l sk">IV terapia — kolekcia signatúrnych infúzií</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Immortal Serenity</span><span class="l de">The Immortal Serenity</span><span class="l ru">The Immortal Serenity</span><span class="l ar">The Immortal Serenity</span></div>
-    <div class="item-desc"><span class="l en">NAD+ Longevity Drip · cellular longevity · anti-aging from within · energy renaissance</span><span class="l de">NAD+ Longevity Drip · zelluläre Langlebigkeit · Anti-Aging von innen · Energie-Renaissance</span><span class="l ru">NAD+ Longevity Drip · клеточное долголетие · анти-эйдж изнутри · энергетическое возрождение</span><span class="l ar">NAD+ · طول العمر الخلوي · مكافحة الشيخوخة · تجديد الطاقة</span></div>
+    <div class="item-name"><span class="l en">The Immortal Serenity</span><span class="l de">The Immortal Serenity</span><span class="l ru">The Immortal Serenity</span><span class="l sk">The Immortal Serenity</span></div>
+    <div class="item-desc"><span class="l en">NAD+ Longevity Drip · cellular longevity · anti-aging from within · energy renaissance</span><span class="l de">NAD+ Longevity Drip · zelluläre Langlebigkeit · Anti-Aging von innen · Energie-Renaissance</span><span class="l ru">NAD+ Longevity Drip · клеточное долголетие · анти-эйдж изнутри · энергетическое возрождение</span><span class="l sk">NAD+ infúzia dlhovekosti · bunková dlhovekosť · anti-aging zvnútra · obnova energie</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 230</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 255</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Vital Surge</span><span class="l de">The Vital Surge</span><span class="l ru">The Vital Surge</span><span class="l ar">The Vital Surge</span></div>
-    <div class="item-desc"><span class="l en">Fatigue reset · jet lag cocktail · hangover revival</span><span class="l de">Müdigkeit reset · Jet-Lag-Cocktail · Hangover-Revival</span><span class="l ru">Сброс усталости · коктейль от джетлага · восстановление после вечеринки</span><span class="l ar">إعادة التعافي من التعب · اضطراب السفر</span></div>
+    <div class="item-name"><span class="l en">The Vital Surge</span><span class="l de">The Vital Surge</span><span class="l ru">The Vital Surge</span><span class="l sk">The Vital Surge</span></div>
+    <div class="item-desc"><span class="l en">Fatigue reset · jet lag cocktail · hangover revival</span><span class="l de">Müdigkeit reset · Jet-Lag-Cocktail · Hangover-Revival</span><span class="l ru">Сброс усталости · коктейль от джетлага · восстановление после вечеринки</span><span class="l sk">Reset únavy · koktail proti jet lagu · obnova po opici</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 175</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 195</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Glow Renewal</span><span class="l de">The Glow Renewal</span><span class="l ru">The Glow Renewal</span><span class="l ar">The Glow Renewal</span></div>
-    <div class="item-desc"><span class="l en">Skin radiance · deep detoxification · antioxidant surge</span><span class="l de">Hautleuchtkraft · Tiefenentgiftung · Antioxidans-Surge</span><span class="l ru">Сияние кожи · глубокая детоксикация · антиоксидантный всплеск</span><span class="l ar">إشراق البشرة · تطهير عميق · مضادات الأكسدة</span></div>
+    <div class="item-name"><span class="l en">The Glow Renewal</span><span class="l de">The Glow Renewal</span><span class="l ru">The Glow Renewal</span><span class="l sk">The Glow Renewal</span></div>
+    <div class="item-desc"><span class="l en">Skin radiance · deep detoxification · antioxidant surge</span><span class="l de">Hautleuchtkraft · Tiefenentgiftung · Antioxidans-Surge</span><span class="l ru">Сияние кожи · глубокая детоксикация · антиоксидантный всплеск</span><span class="l sk">Žiarivá pleť · hĺbková detoxikácia · príval antioxidantov</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 230</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 255</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Nile Hydration</span><span class="l de">The Nile Hydration</span><span class="l ru">The Nile Hydration</span><span class="l ar">The Nile Hydration</span></div>
-    <div class="item-desc"><span class="l en">Full cellular rehydration · mineral & vitamin restore</span><span class="l de">Vollständige Zellrehydration · Mineral- & Vitaminrestore</span><span class="l ru">Полная клеточная регидратация · минералы & витамины</span><span class="l ar">إعادة الترطيب الخلوي الكامل · المعادن والفيتامينات</span></div>
+    <div class="item-name"><span class="l en">The Nile Hydration</span><span class="l de">The Nile Hydration</span><span class="l ru">The Nile Hydration</span><span class="l sk">The Nile Hydration</span></div>
+    <div class="item-desc"><span class="l en">Full cellular rehydration · mineral & vitamin restore</span><span class="l de">Vollständige Zellrehydration · Mineral- & Vitaminrestore</span><span class="l ru">Полная клеточная регидратация · минералы & витамины</span><span class="l sk">Kompletná bunková rehydratácia · obnova minerálov a vitamínov</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 175</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 195</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Ra's Elixir</span><span class="l de">Ra's Elixir</span><span class="l ru">Ra's Elixir</span><span class="l ar">Ra's Elixir</span></div>
-    <div class="item-desc"><span class="l en">Complete micronutrient reset · immunity & energy fusion</span><span class="l de">Vollständiger Mikronährstoff-Reset · Immunität & Energie-Fusion</span><span class="l ru">Полный сброс микронутриентов · иммунитет & энергия</span><span class="l ar">إعادة ضبط المغذيات الدقيقة · المناعة والطاقة</span></div>
+    <div class="item-name"><span class="l en">Ra's Elixir</span><span class="l de">Ra's Elixir</span><span class="l ru">Ra's Elixir</span><span class="l sk">Ra's Elixir</span></div>
+    <div class="item-desc"><span class="l en">Complete micronutrient reset · immunity & energy fusion</span><span class="l de">Vollständiger Mikronährstoff-Reset · Immunität & Energie-Fusion</span><span class="l ru">Полный сброс микронутриентов · иммунитет & энергия</span><span class="l sk">Kompletný reset mikroživín · imunita a energia</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 175</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 195</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Phoenix</span><span class="l de">The Phoenix</span><span class="l ru">The Phoenix</span><span class="l ar">The Phoenix</span></div>
-    <div class="item-desc"><span class="l en">B-complex revival · burnout recovery · energy rebirth</span><span class="l de">B-Komplex-Revival · Burnout-Recovery · Energie-Wiedergeburt</span><span class="l ru">B-комплекс · восстановление от выгорания · возрождение энергии</span><span class="l ar">إحياء مجموعة B · التعافي من الإرهاق · تجديد الطاقة</span></div>
+    <div class="item-name"><span class="l en">The Phoenix</span><span class="l de">The Phoenix</span><span class="l ru">The Phoenix</span><span class="l sk">The Phoenix</span></div>
+    <div class="item-desc"><span class="l en">B-complex revival · burnout recovery · energy rebirth</span><span class="l de">B-Komplex-Revival · Burnout-Recovery · Energie-Wiedergeburt</span><span class="l ru">B-комплекс · восстановление от выгорания · возрождение энергии</span><span class="l sk">Obnova B-komplexom · regenerácia po vyhorení · znovuzrodenie energie</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 95</div></div>
+  <div class="item-right"><div class="item-price">€ 105</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Guardian</span><span class="l de">The Guardian</span><span class="l ru">The Guardian</span><span class="l ar">The Guardian</span></div>
-    <div class="item-desc"><span class="l en">Immune activation · micronutrient fortification · shield</span><span class="l de">Immunaktivierung · Mikronährstoffstärkung · Schutzschild</span><span class="l ru">Активация иммунитета · укрепление микронутриентами · защита</span><span class="l ar">تنشيط المناعة · تحصين المغذيات</span></div>
+    <div class="item-name"><span class="l en">The Guardian</span><span class="l de">The Guardian</span><span class="l ru">The Guardian</span><span class="l sk">The Guardian</span></div>
+    <div class="item-desc"><span class="l en">Immune activation · micronutrient fortification · shield</span><span class="l de">Immunaktivierung · Mikronährstoffstärkung · Schutzschild</span><span class="l ru">Активация иммунитета · укрепление микронутриентами · защита</span><span class="l sk">Aktivácia imunity · posilnenie mikroživinami · ochrana</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 175</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 195</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">Cleopatra's Secret</span><span class="l de">Cleopatra's Secret</span><span class="l ru">Cleopatra's Secret</span><span class="l ar">Cleopatra's Secret</span></div>
-    <div class="item-desc"><span class="l en">Fat metabolism · body contouring support · lipotropic</span><span class="l de">Fettstoffwechsel · Körperkonturierung · Lipotrop</span><span class="l ru">Жировой обмен · поддержка контуринга · липотроп</span><span class="l ar">أيض الدهون · تشكيل الجسم · ليبوتروبيك</span></div>
+    <div class="item-name"><span class="l en">Cleopatra's Secret</span><span class="l de">Cleopatra's Secret</span><span class="l ru">Cleopatra's Secret</span><span class="l sk">Cleopatra's Secret</span></div>
+    <div class="item-desc"><span class="l en">Fat metabolism · body contouring support · lipotropic</span><span class="l de">Fettstoffwechsel · Körperkonturierung · Lipotrop</span><span class="l ru">Жировой обмен · поддержка контуринга · липотроп</span><span class="l sk">Metabolizmus tukov · podpora modelovania tela · lipotropný účinok</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 175</div></div>
+  <div class="item-right"><div class="item-price">€ 195</div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Sahara Sunset</span><span class="l de">The Sahara Sunset</span><span class="l ru">The Sahara Sunset</span><span class="l ar">The Sahara Sunset</span></div>
-    <div class="item-desc"><span class="l en">Calm & nervous system support · mood lift · sleep quality</span><span class="l de">Ruhe & Nervensystem-Unterstützung · Stimmungslift · Schlafqualität</span><span class="l ru">Спокойствие & поддержка нервной системы · настроение · сон</span><span class="l ar">الهدوء · دعم الجهاز العصبي · تحسين المزاج والنوم</span></div>
+    <div class="item-name"><span class="l en">The Sahara Sunset</span><span class="l de">The Sahara Sunset</span><span class="l ru">The Sahara Sunset</span><span class="l sk">The Sahara Sunset</span></div>
+    <div class="item-desc"><span class="l en">Calm & nervous system support · mood lift · sleep quality</span><span class="l de">Ruhe & Nervensystem-Unterstützung · Stimmungslift · Schlafqualität</span><span class="l ru">Спокойствие & поддержка нервной системы · настроение · сон</span><span class="l sk">Upokojenie a podpora nervového systému · zlepšenie nálady · kvalita spánku</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 175</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 195</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Alchemist</span><span class="l de">The Alchemist</span><span class="l ru">The Alchemist</span><span class="l ar">The Alchemist</span></div>
-    <div class="item-desc"><span class="l en">Iron · multivitamin (prescription only)</span><span class="l de">Eisen · Multivitamin (nur auf Rezept)</span><span class="l ru">Железо · мультивитамин (только по рецепту)</span><span class="l ar">حديد · متعدد الفيتامينات (بوصفة طبية فقط)</span></div>
+    <div class="item-name"><span class="l en">The Alchemist</span><span class="l de">The Alchemist</span><span class="l ru">The Alchemist</span><span class="l sk">The Alchemist</span></div>
+    <div class="item-desc"><span class="l en">Iron · multivitamin (prescription only)</span><span class="l de">Eisen · Multivitamin (nur auf Rezept)</span><span class="l ru">Железо · мультивитамин (только по рецепту)</span><span class="l sk">Železo · multivitamín (len na predpis)</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 105</div><div class="price-note"><span class="l en">Rx required</span><span class="l de">Rezept erforderlich</span><span class="l ru">нужен рецепт</span><span class="l ar">وصفة طبية مطلوبة</span></div></div>
+  <div class="item-right"><div class="item-price">€ 115</div><div class="price-note"><span class="l en">Rx required</span><span class="l de">Rezept erforderlich</span><span class="l ru">нужен рецепт</span><span class="l sk">Vyžaduje sa predpis</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Golden Vessel · Signature Drip</span><span class="l de">The Golden Vessel · Signature Drip</span><span class="l ru">The Golden Vessel · Signature Drip</span><span class="l ar">The Golden Vessel · Signature Drip</span></div>
-    <div class="item-desc"><span class="l en">Tailored to your blood work & personal wellness goals</span><span class="l de">Abgestimmt auf Ihre Blutwerte & persönliche Wellnessziele</span><span class="l ru">Подобрано по вашим анализам & личным целям</span><span class="l ar">مُصمَّم وفق تحاليل الدم وأهدافك الشخصية</span></div>
+    <div class="item-name"><span class="l en">The Golden Vessel · Signature Drip</span><span class="l de">The Golden Vessel · Signature Drip</span><span class="l ru">The Golden Vessel · Signature Drip</span><span class="l sk">The Golden Vessel · Signature Drip</span></div>
+    <div class="item-desc"><span class="l en">Tailored to your blood work & personal wellness goals</span><span class="l de">Abgestimmt auf Ihre Blutwerte & persönliche Wellnessziele</span><span class="l ru">Подобрано по вашим анализам & личным целям</span><span class="l sk">Prispôsobené vašim krvným testom a osobným wellness cieľom</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 160</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 179</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
-<div class="section-hdr gold"><span class="l en">SC Therapy — Signature Shot Collection</span><span class="l de">SC-Therapie — Signature Shot Kollektion</span><span class="l ru">SC-Терапия — Коллекция Signature Shot</span><span class="l ar">علاج SC — مجموعة الحقن الحصرية</span></div>
+<div class="section-hdr gold"><span class="l en">SC Therapy — Signature Shot Collection</span><span class="l de">SC-Therapie — Signature Shot Kollektion</span><span class="l ru">SC-Терапия — Коллекция Signature Shot</span><span class="l sk">SC terapia — kolekcia signatúrnych injekcií</span></div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Gladiator</span><span class="l de">The Gladiator</span><span class="l ru">The Gladiator</span><span class="l ar">The Gladiator</span></div>
-    <div class="item-desc"><span class="l en">Muscle repair · sports recovery · tissue regeneration</span><span class="l de">Muskelreparatur · Sporterholung · Geweberegeneration</span><span class="l ru">Восстановление мышц · спортивная регенерация · ткани</span><span class="l ar">إصلاح العضلات · التعافي الرياضي · تجديد الأنسجة</span></div>
+    <div class="item-name"><span class="l en">The Gladiator</span><span class="l de">The Gladiator</span><span class="l ru">The Gladiator</span><span class="l sk">The Gladiator</span></div>
+    <div class="item-desc"><span class="l en">Muscle repair · sports recovery · tissue regeneration</span><span class="l de">Muskelreparatur · Sporterholung · Geweberegeneration</span><span class="l ru">Восстановление мышц · спортивная регенерация · ткани</span><span class="l sk">Regenerácia svalov · športová regenerácia · obnova tkaniva</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 220</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
-</div>
-<div class="item">
-  <div class="item-left">
-    <div class="item-name"><span class="l en">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l de">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l ru">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l ar">The Nefertiti Essence · GHK-Cu Microneedling</span></div>
-    <div class="item-desc"><span class="l en">Collagen stimulation · skin renewal · anti-aging matrix</span><span class="l de">Kollagenstimulation · Hauterneuerung · Anti-Aging-Matrix</span><span class="l ru">Стимуляция коллагена · обновление кожи · анти-эйдж матрица</span><span class="l ar">تحفيز الكولاجين · تجديد البشرة · مصفوفة مكافحة الشيخوخة</span></div>
-  </div>
-  <div class="item-right"><div class="item-price">€ 230</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 245</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Eye of Horus</span><span class="l de">The Eye of Horus</span><span class="l ru">The Eye of Horus</span><span class="l ar">The Eye of Horus</span></div>
-    <div class="item-desc"><span class="l en">Neuro-regeneration · nerve support · mental resilience</span><span class="l de">Neuro-Regeneration · Nervenunterstützung · Mentale Resilienz</span><span class="l ru">Нейрорегенерация · поддержка нервов · ментальная устойчивость</span><span class="l ar">التجديد العصبي · دعم الأعصاب · المرونة العقلية</span></div>
+    <div class="item-name"><span class="l en">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l de">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l ru">The Nefertiti Essence · GHK-Cu Microneedling</span><span class="l sk">The Nefertiti Essence · GHK-Cu Microneedling</span></div>
+    <div class="item-desc"><span class="l en">Collagen stimulation · skin renewal · anti-aging matrix</span><span class="l de">Kollagenstimulation · Hauterneuerung · Anti-Aging-Matrix</span><span class="l ru">Стимуляция коллагена · обновление кожи · анти-эйдж матрица</span><span class="l sk">Stimulácia kolagénu · obnova pokožky · anti-aging matrix</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 220</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 255</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="item">
   <div class="item-left">
-    <div class="item-name"><span class="l en">The Pharaoh's Cure</span><span class="l de">The Pharaoh's Cure</span><span class="l ru">The Pharaoh's Cure</span><span class="l ar">The Pharaoh's Cure</span></div>
-    <div class="item-desc"><span class="l en">Peak athletic performance · rapid regeneration · recovery</span><span class="l de">Maximale Sportleistung · schnelle Regeneration · Erholung</span><span class="l ru">Пиковая спортивная форма · быстрая регенерация · восстановление</span><span class="l ar">الأداء الرياضي الأمثل · التجديد السريع · التعافي</span></div>
+    <div class="item-name"><span class="l en">The Eye of Horus</span><span class="l de">The Eye of Horus</span><span class="l ru">The Eye of Horus</span><span class="l sk">The Eye of Horus</span></div>
+    <div class="item-desc"><span class="l en">Neuro-regeneration · nerve support · mental resilience</span><span class="l de">Neuro-Regeneration · Nervenunterstützung · Mentale Resilienz</span><span class="l ru">Нейрорегенерация · поддержка нервов · ментальная устойчивость</span><span class="l sk">Neuroregenerácia · podpora nervov · psychická odolnosť</span></div>
   </div>
-  <div class="item-right"><div class="item-price">€ 220</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l ar">◆ يلزم تحليل الدم</span></div></div>
+  <div class="item-right"><div class="item-price">€ 245</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
+</div>
+<div class="item">
+  <div class="item-left">
+    <div class="item-name"><span class="l en">The Pharaoh's Cure</span><span class="l de">The Pharaoh's Cure</span><span class="l ru">The Pharaoh's Cure</span><span class="l sk">The Pharaoh's Cure</span></div>
+    <div class="item-desc"><span class="l en">Peak athletic performance · rapid regeneration · recovery</span><span class="l de">Maximale Sportleistung · schnelle Regeneration · Erholung</span><span class="l ru">Пиковая спортивная форма · быстрая регенерация · восстановление</span><span class="l sk">Vrcholový športový výkon · rýchla regenerácia · zotavenie</span></div>
+  </div>
+  <div class="item-right"><div class="item-price">€ 245</div><div class="labs"><span class="l en">◆ labs required</span><span class="l de">◆ Labor erforderlich</span><span class="l ru">◆ анализы обязательны</span><span class="l sk">◆ vyžaduje sa krvný test</span></div></div>
 </div>
 <div class="note-box">
   <span class="l en"><strong>Available upon prior request &amp; prepayment only.</strong> Each treatment is ordered explicitly for you.</span>
   <span class="l de"><strong>Nur auf Voranfrage &amp; Vorkasse verfügbar.</strong> Jede Behandlung wird eigens für Sie reserviert.</span>
   <span class="l ru"><strong>Доступно исключительно по предварительному заказу и предоплате.</strong> Препарат заказывается индивидуально для каждого пациента.</span>
-  <span class="l ar"><strong>متاح فقط بطلب مسبق ودفع مسبق.</strong> كل علاج يُطلب خصيصاً لك.</span>
+  <span class="l sk"><strong>Dostupné len na predchádzajúcu žiadosť a platbu vopred.</strong> Každé ošetrenie je objednané individuálne pre vás.</span>
 </div>
 <div class="note-box" style="margin-top:24px">
   <span class="l en">◆ Treatments marked with ◆ require a prior blood test. Your doctor will arrange this during your consultation.<br>Our treatments are most effective when taken as a curated cycle of 4–6 sessions. <strong>Ask about our course packages.</strong></span>
   <span class="l de">◆ Mit ◆ markierte Behandlungen erfordern einen vorherigen Bluttest. Ihr Arzt wird dies im Rahmen der Beratung arrangieren.<br>Unsere Behandlungen sind am wirksamsten als Zyklus von 4–6 Sitzungen. <strong>Fragen Sie nach unseren Kurspaketen.</strong></span>
   <span class="l ru">◆ Процедуры с ◆ требуют предварительного анализа крови. Ваш врач организует это во время консультации.<br>Наши процедуры наиболее эффективны в виде цикла из 4–6 сеансов. <strong>Спросите о наших курсовых пакетах.</strong></span>
-  <span class="l ar">◆ العلاجات المميزة تتطلب فحص دم مسبق. الأكثر فاعلية كدورة من 4-6 جلسات. <strong>اسأل عن باقات الدورات.</strong></span>
+  <span class="l sk">◆ Ošetrenia označené ◆ vyžadujú predchádzajúci krvný test. Váš lekár to zariadi počas konzultácie.<br>Naše ošetrenia sú najúčinnejšie ako cyklus 4–6 sedení. <strong>Spýtajte sa na naše kurzové balíčky.</strong></span>
 </div>
 </div>
 </div>
 <footer class="page-footer">
   <div><span class="gold">+20 121 497 9692</span><span class="dot">◆</span><span class="gold">info@ravida.io</span><span class="dot">◆</span><span class="gold">ravida.io</span></div>
   <div>Taksim, Zahabia St., Tiba Gold, Hurghada, Egypt</div>
-  <div style="font-size:10.5px;opacity:.5;margin-top:4px"><span class="l en">All prices in EUR · Grand Opening prices · 2026</span><span class="l de">Alle Preise in EUR · Eröffnungspreise · 2026</span><span class="l ru">Все цены в EUR · Цены открытия · 2026</span><span class="l ar">جميع الأسعار بالـ EUR · أسعار الافتتاح · 2026</span></div>
+  <div style="font-size:10.5px;opacity:.5;margin-top:4px"><span class="l en">All prices in EUR · 2026</span><span class="l de">Alle Preise in EUR · 2026</span><span class="l ru">Все цены в EUR · 2026</span><span class="l sk">Všetky ceny v EUR · 2026</span></div>
 </footer>
 <script>
 function setLang(lang,btn){
   document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  document.body.className = 'lang-'+lang + (lang==='ar' ? ' ar-mode' : '');
-  document.documentElement.dir = lang==='ar' ? 'rtl' : 'ltr';
+  document.body.className = 'lang-'+lang;
+  document.documentElement.dir = 'ltr';
 }
 function setCat(cat,btn){
   document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('active'));
